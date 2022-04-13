@@ -1,0 +1,143 @@
+
+
+$dark-blue-bg:#053D56;
+
+//colors
+$dark-blue: #0E2F40;
+$light-green:#35AC6A;
+
+//btn
+$light-blue:#5BB9C9;
+$light-blue-home:#53B6C7;
+$light-blue-slider:#3BBCD5;
+$light-btn-sign:#78CDD1 !default;
+
+//climate change
+$light-blue-climate:#2694A7 !default;
+$light-blue-txt:#ADDFE8;
+$black-txt:#282828;
+$dark-green:#0E4D4D;
+
+//up next
+$light-blue-bg:#C7E7ED; 
+$dark-blue-next:#58BCCE !default;
+
+
+//indutry impact
+$dark-blue-impact:#135557 !default;
+$light-blue-gb:#EFF7F8 !default;
+$light-green-number:#599E78 !default;
+$light-blue-txt-title:#4FC6DB !default;
+$dark-green-bg:#196F6F !default;
+$dark-green-txt:#6EC7C7 !default;
+$grey-footer:#969dae !default;
+
+$grey-border:#31394c !default;
+$light-blue-list:#78cdd1 !default;
+
+$dark-blue-shadow:#1e5167;
+
+$dark-blue-footer:#202737 !default;
+
+$light-blue-bg-c:#C5F2F6;
+
+
+
+//benefits
+$light-blue-bg-b:#47B7C9 !default;
+$light-blue-bg-circle:#B8EDF9 !default;
+$green-light-bg:#52BA82 !default;
+$green-light-bg-card:#2A8888 !default;
+
+//wireless
+$dark-green-wireless:#C9F6E2 !default;
+
+//Variables aftree
+
+/// @type List
+$sourcesanspro: 'Source Sans Pro', 'sans-serif' !default; //
+$gotham: 'Gotham', 'sans-serif' !default;
+
+$buttonsfontsize : 16px;
+
+/// @type Color
+$primary-color: #000000 !default;
+$secondary-color: #231f20 !default;
+$darker-blue : #0B193B !default;
+$light-blue :#7db1de !default;
+$light-blue-txt:#135557 !default;
+$light-white: #FAF8F7 !default;
+$grey : #EFEFEF !default;
+$board : #75020A !default;
+$dark-green: #005251 !default;
+$light-green: #019851 !default;
+$light-green-bg:#5EB786 !default;
+$white: #ffffff !default;
+$light-white-txt:#E2F8FF !default;
+$red: #ed1248 !default;
+$green: #26D780 !default;
+$black: #000 !default;
+$yellow: #F2C127 !default;
+
+/// @type Length
+$site-widths: (
+  'full-width': 100%,
+  'max-width': 140.55vw,
+  'small-width': 993px,
+) !default;
+
+$font-sizes: (
+  'h1': 4.8vw,//80px 4.3vw
+  'h2': 3.4vw,//3.4vw
+  'h3': 3.5vw,//2.23
+  'h4': 1.4vw,
+  'h5': 16px,
+  'h6': 0.98vw,
+) !default;
+
+$font-sizes-tablet: (
+  'h1': 60px,
+  'h2': 20px,
+  'h3': 48px,
+  'h4': 20px,
+  'h5': 12px,
+  'h6': 0.4vw,
+) !default;
+
+$font-sizes-mobile: (
+  'h1': 46px,
+  'h2': 18px,
+  'h3': 32px,
+  'h4': 18px,
+  'h5': 12px,
+  'h6': 0.4vw,
+  ) !default;
+
+$font-weights: (
+  'light': 300,
+  'regular': 400,
+  'medium': 500,
+  'semibold': 600,
+  'demi': 600,
+  'bold': 700,
+) !default;
+
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+
+$breakpoints: (
+'mobile-s': 450px,
+'mobile-v': 600px, 
+'mobile-l': 675px,
+'mobile-h': 750px,
+'mobile-c': 768px,
+'tablet-v': 900px, 
+'tablet-h': 1000px,
+'desktop-m': 1200px,
+'desktop': 1400px,
+) !default;
+
+
+
+
+

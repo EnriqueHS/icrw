@@ -1,0 +1,32 @@
+@import
+  'abstracts/variables',
+  'abstracts/mixins';
+
+
+@import
+  'base/typography',
+  'base/base';
+
+
+@import
+  'layout/header',
+  'layout/footer';
+
+@import
+  'components/hero',
+  'components/slick',
+  'components/preloader',
+  'components/bouncein',
+  'components/upnext';
+
+
+@import
+  'templates/home';
+  //'templates/how';
+  
+
+
+
+
+
+
