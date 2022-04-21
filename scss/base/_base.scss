@@ -16,33 +16,6 @@ html {
   list-style: none;
 }
 
-body {
-  &.home{
-    background: $dark-blue-bg url("../files/hero-home.jpg") no-repeat center -4%;// -8%
-    background-size:100%;
-    @include responsive('desktop'){
-      background-position: center 0%;
-    }
-    @include responsive('tablet-h') {
-    background-size: 210vw;
-    background-position: center 0%;
-  }
-  @include responsive('mobile-v') {
-    //background-size: 190vw;
-    //background-position: center 0%;
-    background-size: 250vw;
-    background-position: 53% 26vw;//150
-  }
-
-  }
-  
-  @include default-font();
-
-  img {
-    max-width: 100%;
-    height: auto;
-  }
-}
 
 .container{
   width: 100%; 

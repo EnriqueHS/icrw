@@ -1,5 +1,5 @@
-/// @type List
-$sourcesanspro: 'Source Sans Pro', 'sans-serif' !default; //
+// @type List
+$sourcesanspro: 'Source Sans Pro', 'sans-serif' !default; 
 $gotham: 'Gotham', 'sans-serif' !default;
 
 $buttonsfontsize : 16px;
@@ -17,7 +17,7 @@ $grey : #EFEFEF !default;
     $light-grey:#f5f5f7 !default;
     $dark-grey:#e5e4e5 !default;
     $dark-grey-txt:#3a4049 !default;
-    $dark-grey-opacity:#acacb1 !default;
+    $dark-grey-opacity:#3a4049 !default;
 $dark-green: #005251 !default;
 $light-green: #019851 !default;
 $light-green-bg:#5EB786 !default;
@@ -83,8 +83,7 @@ $breakpoints: (
 'tablet-v': 900px, 
 'tablet-h': 1000px,
 'desktop-m': 1200px,
-'desktop': 1440px,
-'desktop-l': 1680px,
+'desktop': 1400px,
 ) !default;
 
 

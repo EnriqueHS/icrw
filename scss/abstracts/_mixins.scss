@@ -1,7 +1,7 @@
 @mixin default-font(){
   font-family: $sourcesanspro;
   font-size: 1.39vw;
-  //color: $primary-color;
+  color: $primary-color;
 
   @include responsive('desktop-m') {
     font-size: 22px;
@@ -110,7 +110,6 @@
   font-size: map-get($font-sizes, h1);
   font-family: $sourcesanspro;
   line-height: 1.3;
-  color: $dark-blue;
   font-weight: 700;
   
   @include responsive('tablet-h'){
@@ -188,93 +187,27 @@
 }
 
 @mixin button() {
-  //background-color: $white;
   font-size: $buttonsfontsize;
   line-height: 3;
   color: $secondary-color;
-  text-transform: capitalize;
   border: 1px solid $secondary-color;
-  font-family:'Source Sans Pro' ;
-  font-weight: 400;
+  text-transform: capitalize;
+  font-family:'Source Sans Pro';
+  font-weight: 700;
   cursor: pointer;
-  padding: 5px 10px;
+  padding: 0 2vw;
   transition: all .3s ease;
 
   &--dark {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color:rgba(0, 0, 0, 0.3);
     color:$white;
   }
   &--light{
-    background-color: $light-blue-home;
     color:$white;
   }
 
   &:hover{
     transform: scale(1.05);
-    background-color:$light-blue-climate;
     color:$white;
-    
   }
 }
-
-//page how
-@mixin title-h3 () {
-  font-size: 3.3vw;
-  font-weight: 700;
-  text-transform: capitalize;
-  padding-bottom: 3.5vw;
-
-  @include responsive ('tablet-h'){
-    font-size: 45px;
-    padding-bottom: 60px;
-  }
-  @include responsive ('mobile-v'){
-    font-size: 38px;
-    padding-bottom: 40px;
-  }
-}
-@mixin paragraph() {
-  font-family: $sourcesanspro;
-  color: $light-white-txt;
-  //color: $white;
-  font-size: 1.3vw;
-  letter-spacing: 0;
-  line-height: 1.6;
-  font-weight: 400;
-  padding-bottom: 2vw;
-
-  @include responsive ('tablet-h'){
-    font-size: 22px;
-    padding-bottom: 5vw;
-  }
-  @include responsive ('mobile-v'){
-    font-size: 20px;
-    padding-bottom: 7vw;
-  }
-}
-@mixin span() {
-  display: block;
-  text-transform: uppercase;
-  font-weight: 700;
-  padding-bottom: 0.5vw;
-  font-size: 20px;
-
-}
-
-@mixin block-txt() {
-  width: 44vw;//100%
-  max-width: 100%;
-  padding: 8vw 0 0 0;
-  text-align: left;
-  margin: 0 auto;
-  color: $white;
-
-  @include responsive ('tablet-h'){
-    width: 100%;
-  }
-  @include responsive ('mobile-v'){
-    width: 100%;
-  }
-  
-}
-
