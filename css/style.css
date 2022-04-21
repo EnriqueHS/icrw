@@ -29,7 +29,7 @@ body.home {
   background: #053D56 url("../files/hero-home.jpg") no-repeat center -4%;
   background-size: 100%;
 }
-@media only screen and (max-width: 1400px) {
+@media only screen and (max-width: 1440px) {
   body.home {
     background-position: center 0%;
   }

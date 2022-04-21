@@ -188,21 +188,20 @@
 }
 
 @mixin button() {
-  background-color: $light-blue-home;
+  //background-color: $white;
   font-size: $buttonsfontsize;
   line-height: 3;
-  color: $white;
-  border-radius:5vw;
+  color: $secondary-color;
   text-transform: capitalize;
-  //margin-top: 2.2vw;
+  border: 1px solid $secondary-color;
   font-family:'Source Sans Pro' ;
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
-  padding: 0 2vw;
+  padding: 5px 10px;
   transition: all .3s ease;
 
   &--dark {
-    background-color: $dark-blue;
+    background-color: rgba(0, 0, 0, 0.3);
     color:$white;
   }
   &--light{
