@@ -45,20 +45,19 @@
       position: relative;
 
       .join__container{
-        width: 720px;
-        height: 230px;
+        width: 53vw;
+        height: 17vw;
         background-color:$dark-red ;
         position: absolute;
         bottom: -5vw;
         right: 0;
         display: flex;
+        justify-content: space-around;
         padding: 20px 0 0 80px;
   
         .join__left{
           color: $white;
-          width: 35.5vw;
-          border: 1px solid;
-          
+          width: 43.5vw;          
   
           .join__title{
             font-size: 30px;
@@ -86,12 +85,15 @@
         }
 
         .join__right{
-          
+          width: 11.5vw;
           display: flex;
-
+          align-items: flex-start;
+          
           span{
             font-size: 20px;
             color: $white;
+            margin-right: 16px;
+            font-weight: 400;
           }
 
           .join__action{
