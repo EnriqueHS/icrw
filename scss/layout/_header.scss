@@ -1,22 +1,55 @@
-.header {
+
+header {
   width: 100%;
-  position: absolute;
+  position: relative;
   top:0;
   z-index: 10;
+  font-size: 75px;
 
-  &__logo {
-    padding: 1.5vw 0 0 1.9vw;
-    transition: all 1s ease;
-  }
-  > .container {
+  nav{
+    border: 1px solid;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-    padding: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    height:auto;
+
+    .logo {
+      transition: all 1s ease;
+      width: 334px;
+      margin-left: 5vw;
+    }
+
+    .menu__item{
+      width: 266px;
+      height: 83px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+
+      &__link{
+        font-size: 16px;
+        color: $white;
+        padding: 0 11px 11px 0;
+        text-transform: uppercase;
+      }
+    }
+
+    .firts{
+      background-color:$light-green-bg;
+    }
+
+    .second{
+      background-color: $light-green-bg-second;
+    }
+
+    .third{
+      background-color: $light-green-bg-thrid;
+    }
+
+    .donate{
+      background-color: $dark-red;
+      width: 264px;
+    }
   }
+
 }

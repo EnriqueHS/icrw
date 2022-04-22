@@ -5,22 +5,22 @@ $gotham: 'Gotham', 'sans-serif' !default;
 $buttonsfontsize : 16px;
 
 /// @type Color
-    $primary-color: #828282 !default;
-    $secondary-color: #0a5b66 !default;
-    $darker-green-bg : #537d7d !default;
-    $darker-green-bg-secondary : #00908e !default;
-$light-blue :#7db1de !default;
-    $light-green-bg:rgba(110, 172, 172, 0.8) !default;
+$primary-color: #828282 !default;
+$secondary-color: #0a5b66 !default;
+$darker-green-bg : #537d7d !default;
+$darker-green-bg-secondary : #00908e !default;
+
+$light-green-bg:rgba(110, 172, 172, 0.8) !default;
+$light-green-bg-second:rgba(110, 172, 172, 0.85) !default;
+$light-green-bg-thrid:rgba(110, 172, 172, 0.9) !default;
 $light-white: #FAF8F7 !default;
 $grey : #EFEFEF !default;
-    $dark-red : #e33f2c !default;
-    $light-grey:#f5f5f7 !default;
-    $dark-grey:#e5e4e5 !default;
-    $dark-grey-txt:#3a4049 !default;
-    $dark-grey-opacity:#3a4049 !default;
-$dark-green: #005251 !default;
-$light-green: #019851 !default;
-$light-green-bg:#5EB786 !default;
+$dark-red : #e33f2c !default;
+$light-grey:#f5f5f7 !default;
+$dark-grey:#e5e4e5 !default;
+$dark-grey-txt:#3a4049 !default;
+$dark-grey-opacity:#3a4049 !default;
+$dark-grey-footer:#88878d !default;
 $white: #ffffff !default;
 $light-white-txt:#E2F8FF !default;
 $red: #ed1248 !default;

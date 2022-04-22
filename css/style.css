@@ -1,4 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap");
+img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -21,10 +28,24 @@ html {
   list-style: none;
 }
 
-.container {
+html {
+  font-family: "Source Sans Pro", "sans-serif";
+  font-size: 1.39vw;
+}
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+.container--md {
   width: 100%;
   max-width: 100%;
-  padding: 0 3vw;
+}
+
+.container--sm {
+  width: 100%;
+  padding: 0 80px;
 }
 
 .title {
@@ -50,7 +71,6 @@ html {
 p {
   font-family: "Source Sans Pro", "sans-serif";
   font-size: 1.39vw;
-  color: #828282;
 }
 @media only screen and (max-width: 1200px) {
   p {
@@ -58,36 +78,67 @@ p {
   }
 }
 
-.header {
+header {
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 0;
   z-index: 10;
+  font-size: 75px;
 }
-.header__logo {
-  padding: 1.5vw 0 0 1.9vw;
-  -webkit-transition: all 1s ease;
-  transition: all 1s ease;
-}
-.header > .container {
+header nav {
+  border: 1px solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
+  height: auto;
+}
+header nav .logo {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  width: 334px;
+  margin-left: 5vw;
+}
+header nav .menu__item {
+  width: 266px;
+  height: 83px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+header nav .menu__item__link {
+  font-size: 16px;
+  color: #ffffff;
+  padding: 0 11px 11px 0;
+  text-transform: uppercase;
+}
+header nav .firts {
+  background-color: rgba(110, 172, 172, 0.8);
+}
+header nav .second {
+  background-color: rgba(110, 172, 172, 0.85);
+}
+header nav .third {
+  background-color: rgba(110, 172, 172, 0.9);
+}
+header nav .donate {
+  background-color: #e33f2c;
+  width: 264px;
+}
+
+footer {
+  background-color: grey;
 }
 
 .hero {

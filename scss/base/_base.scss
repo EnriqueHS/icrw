@@ -16,13 +16,20 @@ html {
   list-style: none;
 }
 
+html{
+  @include default-font();
+}
 
-.container{
+.container--md{
   width: 100%; 
   max-width: 100%;
-  padding: 0 3vw;
-
 }
+
+.container--sm{
+  width: 100%;
+  padding: 0 80px;
+}
+
 .title{
   @include h1();
 }
