@@ -20,7 +20,7 @@ html{
   @include default-font();
 }
 
-.container--md{
+.container--middle{
   width: 100%; 
   max-width: 100%;
 }
@@ -30,9 +30,7 @@ html{
   padding: 0 80px;
 }
 
-.title{
-  @include h1();
-}
+
 
 p {
   @include default-font();

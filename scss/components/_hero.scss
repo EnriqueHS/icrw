@@ -1,3 +1,106 @@
-.hero{
-    background-color: aliceblue;
+.hero {
+
+  &__container {
+    background-color: darkslategray;
+    width: 100%;
+    background-size: 100%;
+
+    .hero__text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 45vw;
+  
+      .hero__title {
+        @include h2 ();
+        position: relative;
+        width: 43vw;
+        color: $white;
+        padding-bottom: 1.4vw;
+    
+        &::before {
+          content: "";
+          position: absolute;
+          top: 15px;
+          left: -40px;
+          font-size: 20px;
+          width: 22px;
+          height: 22px;
+          transform: rotate(-315deg);
+          border: 1px solid $white;
+        }
+      }
+  
+      .hero__text__content {
+        font-size: 16px;
+        color: $third-color;
+        width: 33.5vw;
+        line-height: 1.6;
+      }
+    }
+
+    .join__container__position{
+
+      position: relative;
+
+      .join__container{
+        width: 720px;
+        height: 230px;
+        background-color:$dark-red ;
+        position: absolute;
+        bottom: -5vw;
+        right: 0;
+        display: flex;
+        padding: 20px 0 0 80px;
+  
+        .join__left{
+          color: $white;
+          width: 35.5vw;
+          border: 1px solid;
+          
+  
+          .join__title{
+            font-size: 30px;
+            padding-bottom: 13px;
+            position: relative;
+
+            &::before {
+              content: "";
+              position: absolute;
+              top: 0;
+              left: -40px;
+              font-size: 20px;
+              width: 31px;
+              height: 31px;
+              background-color:$third-color;
+              border: 1px solid $dark-grey-check;
+            }
+          }
+
+          .join__text{
+            font-size:18px ;
+            font-weight: 400;
+            line-height: 1.6;
+          }
+        }
+
+        .join__right{
+          
+          display: flex;
+
+          span{
+            font-size: 20px;
+            color: $white;
+          }
+
+          .join__action{
+            width: 2.6vw;
+          }
+        }
+      }
+    }
+  }
+
 }
+

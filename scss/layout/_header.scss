@@ -7,21 +7,29 @@ header {
   font-size: 75px;
 
   nav{
-    border: 1px solid;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height:auto;
+    cursor: pointer;
+    height: 6.3vw;
+    
 
+    .logo__cont{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
     .logo {
-      transition: all 1s ease;
-      width: 334px;
-      margin-left: 5vw;
+      transition: all 0.5s ease;
+      width: 28.3vw;
+      margin:0 80px 0 70px;
     }
 
     .menu__item{
-      width: 266px;
-      height: 83px;
+      width: 20.1vw;//266px
+      height: 6.3vw;//83px
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
@@ -29,9 +37,13 @@ header {
       &__link{
         font-size: 16px;
         color: $white;
-        padding: 0 11px 11px 0;
+        padding: 0 18px 11px 0;
         text-transform: uppercase;
       }
+    }
+    .menu__item:nth-of-type(6){
+      background-color: $dark-red;
+      width: 20.1vw;
     }
 
     .firts{
@@ -46,9 +58,26 @@ header {
       background-color: $light-green-bg-thrid;
     }
 
-    .donate{
+   /*  .donate{
       background-color: $dark-red;
       width: 264px;
+    } */
+
+    .search{
+      width: 48px;//48px
+      height: 6.3vw;
+      background-color:$darker-green-bg;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content:flex-start;
+      align-items: center;
+      padding-bottom: 13px;
+      
+
+      img{
+        width: 22px;
+        height: 22px;
+      }
     }
   }
 
