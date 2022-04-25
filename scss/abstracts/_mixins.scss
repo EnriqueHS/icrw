@@ -135,6 +135,7 @@ img {
   font-size: map-get($font-sizes, h2);
   font-family: $sourcesanspro;
   line-height: 1.1;
+  font-weight: 700;
  
   @include responsive('tablet-h'){
     font-size: map-get($font-sizes-tablet, h2);
@@ -147,6 +148,7 @@ img {
   font-size: map-get($font-sizes, h3);
   font-family: $sourcesanspro;
   line-height: 1.1;
+  font-weight: 700;
   
   @include responsive('tablet-h'){
     font-size: map-get($font-sizes-tablet, h3);
@@ -194,15 +196,16 @@ img {
 
 @mixin button() {
   font-size: $buttonsfontsize;
-  line-height: 3;
+  line-height: 1;
   color: $secondary-color;
   border: 1px solid $secondary-color;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-family:'Source Sans Pro';
-  font-weight: 700;
+  font-weight: 400;
   cursor: pointer;
-  padding: 0 2vw;
+  padding: 8px 15px;
   transition: all .3s ease;
+  text-align: center; 
 
   &--dark {
     background-color:rgba(0, 0, 0, 0.3);
@@ -213,7 +216,7 @@ img {
   }
 
   &:hover{
-    transform: scale(1.05);
     color:$white;
+    background-color:$dark-buttom-hover;
   }
 }

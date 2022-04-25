@@ -12,7 +12,7 @@ header {
     align-items: center;
     height:auto;
     cursor: pointer;
-    height: 6.3vw;
+    height: 5.5vw;
     
 
     .logo__cont{
@@ -29,7 +29,7 @@ header {
 
     .menu__item{
       width: 20.1vw;//266px
-      height: 6.3vw;//83px
+      height: 5.5vw;//83px
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
@@ -65,7 +65,7 @@ header {
 
     .search{
       width: 48px;//48px
-      height: 6.3vw;
+      height: 5.5vw;
       background-color:$darker-green-bg;
       display: flex;
       flex-direction: column-reverse;

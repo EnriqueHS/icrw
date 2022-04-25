@@ -10,6 +10,7 @@ $secondary-color: #0a5b66 !default;
 $third-color:#d8d8d8 !default;
 $darker-green-bg : #537d7d !default;
 $darker-green-bg-secondary : #00908e !default;
+$dark-buttom-hover:#008987 !default;
 
 $light-green-bg:rgba(110, 172, 172, 0.8) !default;
 $light-green-bg-second:rgba(110, 172, 172, 0.85) !default;
@@ -39,9 +40,9 @@ $site-widths: (
 ) !default;
 
 $font-sizes: (
-  'h1': 4.8vw,
-  'h2': 3.4vw,
-  'h3': 3.5vw,
+  'h1': 80px, //4.8vw
+  'h2': 50px, //3.1vw
+  'h3': 30px, //2.8vw,
   'h4': 1.4vw,
   'h5': 16px,
   'h6': 0.98vw,

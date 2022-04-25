@@ -77,7 +77,7 @@ header nav {
           align-items: center;
   height: auto;
   cursor: pointer;
-  height: 6.3vw;
+  height: 5.5vw;
   /*  .donate{
      background-color: $dark-red;
      width: 264px;
@@ -102,7 +102,7 @@ header nav .logo {
 }
 header nav .menu__item {
   width: 20.1vw;
-  height: 6.3vw;
+  height: 5.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -134,7 +134,7 @@ header nav .third {
 }
 header nav .search {
   width: 48px;
-  height: 6.3vw;
+  height: 5.5vw;
   background-color: #537d7d;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -182,9 +182,10 @@ footer {
   height: 45vw;
 }
 .hero__container .hero__text .hero__title {
-  font-size: 3.4vw;
+  font-size: 50px;
   font-family: "Source Sans Pro", "sans-serif";
   line-height: 1.1;
+  font-weight: 700;
   position: relative;
   width: 43vw;
   color: #ffffff;
@@ -226,7 +227,7 @@ footer {
   height: 17vw;
   background-color: #e33f2c;
   position: absolute;
-  bottom: -5vw;
+  bottom: -3vw;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -288,7 +289,7 @@ footer {
   grid-template-rows: repeat(2, auto);
   gap: 20px;
   width: 100%;
-  padding-top: 115px;
+  padding-top: 130px;
 }
 
 .grid__layout > *:nth-child(1) {
@@ -320,10 +321,30 @@ footer {
   -ms-grid-row: 3;
   -ms-grid-column: 5;
 }
+.grid__layout--row {
+  -ms-grid-columns: auto 30px auto;
+  grid-template-columns: auto auto;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  gap: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.grid__layout--row > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.grid__layout--row > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.grid__layout--row .image__cont__circle {
+  max-width: 50vw;
+}
 .grid__layout .box {
-  border: 1px solid;
-  background-color: blue;
-  min-height: 15vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -334,12 +355,13 @@ footer {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  width: 26.8vw;
 }
 .grid__layout .box--work {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
-  background-color: aqua;
+  margin-top: -2vw;
 }
 .grid__layout .box__title__cont {
   display: -webkit-box;
@@ -348,24 +370,44 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  min-height: 5.5vw;
 }
 .grid__layout .box__title__cont .icon__img {
-  min-width: 2.5vw;
+  width: 4vw;
   margin-right: 20px;
 }
 .grid__layout .box__title {
-  font-size: 3.4vw;
+  font-size: 30px;
   font-family: "Source Sans Pro", "sans-serif";
   line-height: 1.1;
+  font-weight: 700;
   color: #0a5b66;
 }
 @media only screen and (max-width: 1000px) {
   .grid__layout .box__title {
-    font-size: 20px;
+    font-size: 48px;
   }
 }
 @media only screen and (max-width: 600px) {
   .grid__layout .box__title {
+    font-size: 32px;
+  }
+}
+.grid__layout .box__title--big {
+  font-size: 50px;
+  font-family: "Source Sans Pro", "sans-serif";
+  line-height: 1.1;
+  font-weight: 700;
+  color: #0a5b66;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 1000px) {
+  .grid__layout .box__title--big {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .grid__layout .box__title--big {
     font-size: 18px;
   }
 }
@@ -373,5 +415,44 @@ footer {
   color: #828282;
   font-size: 18px;
   line-height: 30px;
+  margin-top: 25px;
+  min-height: 9vw;
+}
+.grid__layout .box .button {
+  font-size: 16px;
+  line-height: 1;
+  color: #0a5b66;
+  border: 1px solid #0a5b66;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro";
+  font-weight: 400;
+  cursor: pointer;
+  padding: 8px 15px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  text-align: center;
+  width: 136px;
+  padding: 10px 0;
+  background-color: #ffffff;
+  margin-top: 30px;
+}
+.grid__layout .box .button--dark {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+}
+.grid__layout .box .button--light {
+  color: #ffffff;
+}
+.grid__layout .box .button:hover {
+  color: #ffffff;
+  background-color: #008987;
+}
+
+.dates {
+  background-color: #00908e;
+  padding: 60px 125px 80px 125px;
+}
+.dates__item {
+  padding: auto;
 }
 /*# sourceMappingURL=style.css.map */
