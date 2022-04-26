@@ -1,4 +1,4 @@
-.grid__layout{
+.grid__layout {
   display: grid;
   grid-template-columns: repeat(3, auto);
   grid-template-rows: repeat(2, auto);
@@ -6,52 +6,52 @@
   width: 100%;
   padding-top: 130px;
 
-  &--row{
+  &--row {
     grid-template-columns: auto auto;
     grid-template-rows: auto;
     gap: 30px;
     align-items: center;
     justify-content: space-around;
 
-    .image__cont__circle{
+    .image__cont__circle {
       max-width: 50vw;
     }
   }
 
-  .box{
+  .box {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     width: 26.8vw;
 
-    &--work{
+    &--work {
       grid-row: 1/3;
       margin-top: -2vw;
     }
 
-    &__title__cont{
+    &__title__cont {
       display: flex;
       align-items: center; 
       min-height: 5.5vw;
       
-      .icon__img{
+      .icon__img {
         width: 4vw;
-        margin-right: 20px;
+        margin-right: 5px;
       }
     }
 
-    &__title{
+    &__title {
       @include h3 ();
       color:$secondary-color ;
       
-      &--big{
+      &--big {
         @include h2 ();
         color: $secondary-color;
         text-transform: uppercase;
       }
     }
 
-    &__text{
+    &__text {
       color: $primary-color; 
       font-size:18px ;
       line-height: 30px;
@@ -59,7 +59,7 @@
       min-height: 9vw;
     }
 
-    .button{
+    .button {
       @include button ();
       width: 136px;
       padding: 10px 0;
@@ -71,11 +71,83 @@
 
 //section dates
 
-.dates{
-  background-color:$darker-green-bg-secondary ;
-  padding: 60px 125px 80px 125px;
+.dates {
+  background-color: $darker-green-bg-secondary;
+  padding: 60px 125px 80px 60px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 
-  &__item{
-    padding: auto;
+  
+
+  .date__item {
+    padding: 5px 0 10px 0;
+    //width: 240px;
+    text-align: center;
+    border-right: 1px solid $white;
+    min-width: 18vw;
+
+    .date__number {
+      color: $white;
+      text-align: center;
+      font-size: 90px;
+      font-weight: 300;
+    }
+
+    .date__text {
+      color: $white;
+      text-align: center;
+      font-size: 18px;
+    }
+  }
+
+  .date__item:nth-last-child(1){
+    border-right:none;
+  }
+}
+
+//second dates
+.dates__images{
+
+  .dates__grid__layout{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    grid-template-columns: repeat(3, 530px);
+    grid-template-rows: 400px;
+    justify-content: center;
+    border: 1px solid ;
+
+    .dates__grid__item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      filter: brightness(50%);
+
+      .image-background {
+        max-width: 7vw;
+      }
+
+      span {
+        margin-top: 23px;
+        font-size: 30px;
+        font-weight: 700;
+        color: $white;
+        text-transform: uppercase;
+      }
+    }
+
+    .dates--one {
+      background: url(/files/africa.jpg) no-repeat center center /cover;
+    }
+
+    .dates--two {
+      background: url(/files/asia.jpg) no-repeat center center /cover;
+    }
+
+    .dates--three {
+      background: url(/files/global.jpg) no-repeat center center /cover;
+    }
   }
 }

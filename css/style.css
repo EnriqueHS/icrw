@@ -374,7 +374,7 @@ footer {
 }
 .grid__layout .box__title__cont .icon__img {
   width: 4vw;
-  margin-right: 20px;
+  margin-right: 5px;
 }
 .grid__layout .box__title {
   font-size: 30px;
@@ -450,9 +450,101 @@ footer {
 
 .dates {
   background-color: #00908e;
-  padding: 60px 125px 80px 125px;
+  padding: 60px 125px 80px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.dates__item {
-  padding: auto;
+.dates .date__item {
+  padding: 5px 0 10px 0;
+  text-align: center;
+  border-right: 1px solid #ffffff;
+  min-width: 18vw;
+}
+.dates .date__item .date__number {
+  color: #ffffff;
+  text-align: center;
+  font-size: 90px;
+  font-weight: 300;
+}
+.dates .date__item .date__text {
+  color: #ffffff;
+  text-align: center;
+  font-size: 18px;
+}
+.dates .date__item:nth-last-child(1) {
+  border-right: none;
+}
+
+.dates__images .dates__grid__layout {
+  width: 100%;
+  height: 400px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (530px)[3];
+  grid-template-columns: repeat(3, 530px);
+  -ms-grid-rows: 400px;
+  grid-template-rows: 400px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid;
+}
+
+.dates__images .dates__grid__layout > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.dates__images .dates__grid__layout > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.dates__images .dates__grid__layout > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.dates__images .dates__grid__layout .dates__grid__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+.dates__images .dates__grid__layout .dates__grid__item .image-background {
+  max-width: 7vw;
+}
+.dates__images .dates__grid__layout .dates__grid__item span {
+  margin-top: 23px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.dates__images .dates__grid__layout .dates--one {
+  background: url(/files/africa.jpg) no-repeat center center/cover;
+}
+.dates__images .dates__grid__layout .dates--two {
+  background: url(/files/asia.jpg) no-repeat center center/cover;
+}
+.dates__images .dates__grid__layout .dates--three {
+  background: url(/files/global.jpg) no-repeat center center/cover;
 }
 /*# sourceMappingURL=style.css.map */
