@@ -460,6 +460,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 74px;
 }
 .dates .date__item {
   padding: 5px 0 10px 0;
@@ -724,7 +725,13 @@ footer {
   height: 13px;
   -webkit-transform: rotate(-315deg);
           transform: rotate(-315deg);
-  border: solid 1px #00908e;
+  border: solid 1px;
+}
+.latest__grid__layout .latest__item .latest__header .latest__header--left .upertitle--red, .latest__grid__layout .latest__item .latest__header .latest__header--right .upertitle--red {
+  color: #e33f2c;
+}
+.latest__grid__layout .latest__item .latest__header .latest__header--left .upertitle--black, .latest__grid__layout .latest__item .latest__header .latest__header--right .upertitle--black {
+  color: #3a4049;
 }
 .latest__grid__layout .latest__item .latest__header .latest__header--right {
   text-transform: uppercase;
@@ -754,6 +761,14 @@ footer {
   .latest__grid__layout .latest__item .latest__main .latest__title {
     font-size: 32px;
   }
+}
+.latest__grid__layout .latest__item .latest__main .latest__title--red {
+  color: #e33f2c;
+  font-size: 20px;
+}
+.latest__grid__layout .latest__item .latest__main .latest__title--black {
+  color: #3a4049;
+  font-size: 20px;
 }
 .latest__grid__layout .latest__item .latest__main .latest__text {
   font-size: 16px;

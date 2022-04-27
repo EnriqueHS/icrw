@@ -78,6 +78,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  margin-top: 74px;
 
   
 
@@ -232,9 +233,19 @@
             width: 13px;
             height: 13px;
             transform: rotate(-315deg);
-            border: solid 1px $darker-green-bg-secondary;
+            border: solid 1px;
+
+          }
+
+          &--red {
+            color: $dark-red;
+          }
+
+          &--black {
+            color: $dark-grey-txt;
           }
         }
+
       }
 
       .latest__header--right {
@@ -254,6 +265,16 @@
         padding-bottom: 14px;
         font-weight: 700;
         color: $darker-green-bg-secondary ;
+
+        &--red {
+          color: $dark-red;
+          font-size: 20px;
+        }
+
+        &--black {
+          color: $dark-grey-txt;
+          font-size: 20px;
+        }
       }
 
       .latest__text {
