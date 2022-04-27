@@ -113,7 +113,7 @@
 
   .dates__grid__layout{
     width: 100%;
-    height: 400px;
+    //height: 400px;
     display: grid;
     grid-template-columns: repeat(3, 33.3vw);
     grid-template-rows: 25vw;
@@ -147,15 +147,15 @@
     }
 
     .dates--one {
-      background: url(/files/africa.jpg) no-repeat center center /cover;
+      background: url(../files/africa.jpg) no-repeat center center /cover;
     }
 
     .dates--two {
-      background: url(/files/asia.jpg) no-repeat center center /cover;
+      background: url(../files/asia.jpg) no-repeat center center /cover;
     }
 
     .dates--three {
-      background: url(/files/global.jpg) no-repeat center center /cover;
+      background: url(../files/global.jpg) no-repeat center center /cover;
     } 
   }
 }
@@ -196,7 +196,7 @@
 
   .latest__item {
     background-color: $light-grey;
-    min-height: 105px;
+    min-height: auto;//30
     padding: 30px;
 
     &--first {
