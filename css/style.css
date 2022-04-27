@@ -697,7 +697,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
-.latest__grid__layout .latest__item .latest__header .latest__header--left {
+.latest__grid__layout .latest__item .latest__header .latest__header--left, .latest__grid__layout .latest__item .latest__header .latest__header--right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -705,7 +705,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
 }
-.latest__grid__layout .latest__item .latest__header .latest__header--left .upertitle {
+.latest__grid__layout .latest__item .latest__header .latest__header--left .upertitle, .latest__grid__layout .latest__item .latest__header .latest__header--right .upertitle {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 25px;
@@ -713,7 +713,7 @@ footer {
   color: #00908e;
   position: relative;
 }
-.latest__grid__layout .latest__item .latest__header .latest__header--left .upertitle::before {
+.latest__grid__layout .latest__item .latest__header .latest__header--left .upertitle::before, .latest__grid__layout .latest__item .latest__header .latest__header--right .upertitle::before {
   content: "";
   position: absolute;
   top: 0.3vw;
@@ -731,6 +731,9 @@ footer {
   font-size: 14px;
   line-height: 25px;
   color: #acacb1;
+}
+.latest__grid__layout .latest__item .latest__main {
+  max-width: 31.8vw;
 }
 .latest__grid__layout .latest__item .latest__main .latest__title {
   font-size: 30px;
