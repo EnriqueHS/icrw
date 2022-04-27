@@ -147,7 +147,7 @@ img {
   font-family: $sourcesanspro;
   line-height: 1.1;
   font-weight: 700;
- 
+
   @include responsive('tablet-h'){
     font-size: map-get($font-sizes-tablet, h2);
   }
@@ -230,4 +230,10 @@ img {
     color:$white;
     background-color:$dark-buttom-hover;
   }
+}
+
+@mixin icon-title {
+  display: flex;
+  align-items: center; 
+  min-height: 4.5vw;
 }

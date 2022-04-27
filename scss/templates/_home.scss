@@ -48,6 +48,7 @@
         @include h2 ();
         color: $secondary-color;
         text-transform: uppercase;
+        
       }
     }
 
@@ -90,7 +91,7 @@
     .date__number {
       color: $white;
       text-align: center;
-      font-size: 90px;
+      font-size: 5.7vw;
       font-weight: 300;
     }
 
@@ -116,9 +117,6 @@
     grid-template-columns: repeat(3, 33.3vw);
     grid-template-rows: 25vw;
     justify-content: center;
-    border: 1px solid ;
-    
-    
     
     .dates__grid__item{
       @include center-xy ();
@@ -132,7 +130,7 @@
 
       span {
         margin-top: 23px;
-        font-size: 30px;
+        font-size: 1.9vw;
         font-weight: 700;
         color: $white;
         text-transform: uppercase;
@@ -141,12 +139,8 @@
     }
     
     .dates__grid__item::before {
+      @include image-background();
       content: "";
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
       background-color: rgba(0, 0, 0, 0.5);
     }
 
@@ -161,5 +155,110 @@
     .dates--three {
       background: url(/files/global.jpg) no-repeat center center /cover;
     } 
+  }
+}
+
+//latest
+.latest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+
+  &__title__cont {
+    @include icon-title ();
+    margin-bottom: 25px;
+    
+    .icon__img {
+      width: 4vw;
+      margin-right: 5px;
+    }
+
+    .latest__title {
+      font-size: 2.5vw;
+      color: $secondary-color;
+      text-transform: uppercase;
+    }
+  }
+
+  .button {
+    @include button ();
+  }
+}
+
+.latest__grid__layout {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-template-rows: auto auto;
+  gap:40px;
+
+  .latest__item {
+    background-color: $light-grey;
+    min-height: 105px;
+    padding: 30px;
+
+    &--first {
+      grid-column: 1 / 3;
+    }
+
+    &--last {
+      grid-column: 3 / 5;
+    }
+
+    .latest__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .latest__header--left {
+        display: flex;
+        align-items: center;
+  
+        .upertitle {
+          text-transform: uppercase;
+          font-size: 14px;
+          line-height: 25px;
+          padding-left: 30px;
+          color: $darker-green-bg-secondary;
+          position: relative;
+  
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0.3vw;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 13px;
+            height: 13px;
+            transform: rotate(-315deg);
+            border: solid 1px $darker-green-bg-secondary;
+          }
+        }
+      }
+
+      .latest__header--right {
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 25px;
+        color: $dark-grey-text;
+      }
+    }
+
+    .latest__main {
+
+      .latest__title {
+        @include h3 ();
+        padding-top:27px ;
+        padding-bottom: 14px;
+        font-weight: 700;
+        color: $darker-green-bg-secondary ;
+      }
+
+      .latest__text {
+        font-size:16px ;
+        color: $dark-grey-text;
+      }
+    }
   }
 }
