@@ -42,6 +42,17 @@
   align-items: center;
 }
 
+@mixin center-xy(){
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
 @mixin cover(){
   background-size: cover;
   background-position: center center;

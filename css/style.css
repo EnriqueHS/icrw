@@ -487,10 +487,10 @@ footer {
   height: 400px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (530px)[3];
-  grid-template-columns: repeat(3, 530px);
-  -ms-grid-rows: 400px;
-  grid-template-rows: 400px;
+  -ms-grid-columns: (33.3vw)[3];
+  grid-template-columns: repeat(3, 33.3vw);
+  -ms-grid-rows: 25vw;
+  grid-template-rows: 25vw;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -512,24 +512,24 @@ footer {
   -ms-grid-column: 3;
 }
 .dates__images .dates__grid__layout .dates__grid__item {
-  display: -webkit-box;
   display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-filter: brightness(50%);
-          filter: brightness(50%);
+  position: relative;
 }
 .dates__images .dates__grid__layout .dates__grid__item .image-background {
   max-width: 7vw;
+  position: relative;
 }
 .dates__images .dates__grid__layout .dates__grid__item span {
   margin-top: 23px;
@@ -537,6 +537,16 @@ footer {
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  position: relative;
+}
+.dates__images .dates__grid__layout .dates__grid__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .dates__images .dates__grid__layout .dates--one {
   background: url(/files/africa.jpg) no-repeat center center/cover;
