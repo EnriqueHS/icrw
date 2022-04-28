@@ -112,6 +112,8 @@ header nav .menu__item {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 header nav .menu__item__link {
   font-size: 16px;
