@@ -221,6 +221,11 @@ img {
   &--dark {
     background-color:rgba(0, 0, 0, 0.3);
     color:$white;
+    border: none;
+
+    &:hover {
+      border: 1px solid $white;
+    }
   }
   &--light{
     color:$white;
