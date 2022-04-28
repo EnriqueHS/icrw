@@ -333,6 +333,9 @@ footer .links__footer .menu__footer__container .menu__footer__nav--strong {
   text-align: right;
   background-color: #e5e4e5;
   font-weight: 700;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 25px;
 }
 footer .links__footer .menu__footer__container .menu__footer__nav--strong a {
   color: #88878d;
