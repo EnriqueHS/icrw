@@ -9,8 +9,7 @@ footer {
         .subfooter__item {
             background-color: $light-grey;
             min-height: auto; //30
-						padding: 60px 30px 60px 40px;
-						min-height: 18.5vw;
+						padding: 40px 80px 25px 80px;
 
 						&--red {
 							background-color: $dark-red;
@@ -179,19 +178,17 @@ footer {
 					font-weight: 700;
 					padding: 0 22px;
 					font-size: 16px;
+					text-transform: uppercase;
 				}
 
-				.left, 
-				.right{
-					padding: 0 40px;
+			
+
+				.left a {
+					font-weight: 400;
 				}
 
 				.center {
 					display: flex;
-					a {
-						padding-left: 40px;
-					}
-					
 					border-left: 1px solid $dark-grey-footer;
 					border-right: 1px solid $dark-grey-footer;
 				}

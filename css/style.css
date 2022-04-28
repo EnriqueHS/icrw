@@ -182,8 +182,7 @@ footer .subfooter__grid__layout > *:nth-child(3) {
 footer .subfooter__grid__layout .subfooter__item {
   background-color: #f5f5f7;
   min-height: auto;
-  padding: 60px 30px 60px 40px;
-  min-height: 18.5vw;
+  padding: 40px 80px 25px 80px;
 }
 footer .subfooter__grid__layout .subfooter__item--red {
   background-color: #e33f2c;
@@ -384,10 +383,10 @@ footer .offices__container .offices__links a {
   font-weight: 700;
   padding: 0 22px;
   font-size: 16px;
+  text-transform: uppercase;
 }
-footer .offices__container .offices__links .left,
-footer .offices__container .offices__links .right {
-  padding: 0 40px;
+footer .offices__container .offices__links .left a {
+  font-weight: 400;
 }
 footer .offices__container .offices__links .center {
   display: -webkit-box;
@@ -395,9 +394,6 @@ footer .offices__container .offices__links .center {
   display: flex;
   border-left: 1px solid #88878d;
   border-right: 1px solid #88878d;
-}
-footer .offices__container .offices__links .center a {
-  padding-left: 40px;
 }
 footer .offices__container .social__media__container {
   display: -webkit-box;
