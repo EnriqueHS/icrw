@@ -1,9 +1,9 @@
 .hero {
 
   &__container {
-    background-color: darkslategray;
     width: 100%;
     background-size: 100%;
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #000 0%);
 
     .hero__text {
       display: flex;
