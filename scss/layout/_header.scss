@@ -13,7 +13,12 @@ header {
     height:auto;
     cursor: pointer;
     height: 5.5vw;
+      position: relative;
     
+      li {
+        display: inline-block;
+        font-size: 16px;
+      }
 
     .logo__cont{
       display: flex;
@@ -27,45 +32,123 @@ header {
       margin:0 80px 0 70px;
     }
 
+    .menu__main {
+      display: flex;
+    }
+
     .menu__item{
-      width: 20.1vw;//266px
+      width: 15.1vw;//266px 20.1vw 29-04
       height: 5.5vw;//83px
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
-      transition: all 0.3s ;
+      transition: all 0.3s ease;
 
-      &__link{
+      &__link {
         font-size: 16px;
         color: $white;
         padding: 0 18px 11px 0;
         text-transform: uppercase;
       }
+
+      .menu__sub {
+        @extend .container--sm;
+        position: absolute;
+        top: 99%;
+        left: 0;
+        background-color: $dark-buttom-hover;
+        width: 100%;
+        display: none;
+        min-height: 18vw;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        .menu__sub_ul {
+          width: 20.8vw;
+          margin-right: 20px;
+          display:inline-grid;
+        }
+
+        & li a {
+          color: rgba(255, 255, 255, 0.4);
+          
+        }
+
+        & li:hover a {
+          color: $white;
+          transition: all 0.3s ease;          
+        }
+
+        & li {
+          display: block;
+          padding: 10px 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.4);
+        } 
+
+        span {
+          font-size: 1.9vw;
+          line-height: 1.2;
+          color: $white;
+          margin-bottom: 20px;
+          font-weight: 700;
+        }
+
+        span a {
+          color: $white;
+        }
+        .color__transparent {
+          color: $dark-buttom-hover;
+        }
+
+      }
     }
-    .menu__item:nth-of-type(6){
+    .donate{
       background-color: $dark-red;
       width: 20.1vw;
     }
 
     .firts{
       background-color:$light-green-bg;
+
+
+      &:hover {
+        background-color: $dark-buttom-hover;
+
+      }
+      &:hover .menu__sub {
+        background-color: $dark-buttom-hover;
+        display: block;
+      }
     }
 
     .second{
       background-color: $light-green-bg-second;
+
+      &:hover {
+        background-color: $dark-buttom-hover;
+      }
+
+      &:hover .menu__sub {
+        background-color: $dark-buttom-hover;
+        display: block;
+      }
     }
 
     .third{
       background-color: $light-green-bg-thrid;
+
+      &:hover {
+        background-color: $dark-buttom-hover;
+      }
+
+      &:hover .menu__sub {
+        background-color: $dark-buttom-hover;
+        display: block;
+      }
     }
 
-   /*  .donate{
-      background-color: $dark-red;
-      width: 264px;
-    } */
-
     .search{
-      width: 48px;//48px
+      width: 4.7vw;//48px
       height: 5.5vw;
       background-color:$darker-green-bg;
       display: flex;
