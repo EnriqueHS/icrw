@@ -493,7 +493,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   background-size: 100%;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(0%, #000));
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #000 0%);
-  background: url(../files/hero.jpg) no-repeat center center/cover;
+  background: url(/files/hero.jpg) no-repeat center center/cover;
 }
 .hero__container .hero__text {
   display: -webkit-box;
