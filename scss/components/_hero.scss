@@ -30,6 +30,12 @@
           height: 22px;
           transform: rotate(-315deg);
           border: 1px solid $white;
+
+          @include responsive ('tablet-h') {
+            width: 15px;
+            height: 15px;
+            left: -25px;
+          }
         }
       }
   

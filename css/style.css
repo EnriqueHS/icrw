@@ -543,6 +543,13 @@ footer .offices__container .social__media__container .social__media__item__foote
           transform: rotate(-315deg);
   border: 1px solid #ffffff;
 }
+@media only screen and (max-width: 1050px) {
+  .hero__container .hero__text .hero__title::before {
+    width: 15px;
+    height: 15px;
+    left: -25px;
+  }
+}
 .hero__container .hero__text .hero__text__content {
   font-size: 16px;
   color: #d8d8d8;
