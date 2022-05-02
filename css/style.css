@@ -38,14 +38,19 @@ html {
   }
 }
 
-.container--middle {
+.container--l {
   width: 100%;
   max-width: 100%;
 }
 
-.container--sm, header nav .menu__item .menu__sub {
+.container--s, header nav .menu__item .menu__sub {
   width: 100%;
   padding: 0 80px;
+}
+@media only screen and (max-width: 1050px) {
+  .container--s, header nav .menu__item .menu__sub {
+    padding: 0 40px;
+  }
 }
 
 p {
@@ -332,9 +337,9 @@ footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__ti
   font-weight: 700;
   color: #00908e;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
   footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__title {
-    font-size: 48px;
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -488,7 +493,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   background-size: 100%;
   background-image: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(0%, #000));
   background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #000 0%);
-  background: url(/files/hero.jpg) no-repeat center center/cover;
+  background: url(../files/hero.jpg) no-repeat center center/cover;
 }
 .hero__container .hero__text {
   display: -webkit-box;
@@ -516,9 +521,9 @@ footer .offices__container .social__media__container .social__media__item__foote
   color: #ffffff;
   padding-bottom: 1.4vw;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
   .hero__container .hero__text .hero__title {
-    font-size: 20px;
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -561,14 +566,32 @@ footer .offices__container .social__media__container .social__media__item__foote
       justify-content: space-around;
   padding: 20px 0 0 80px;
 }
+@media only screen and (max-width: 1050px) {
+  .hero__container .join__container__position .join__container {
+    padding-left: 50px;
+  }
+}
 .hero__container .join__container__position .join__container .join__left {
   color: #ffffff;
   width: 43.5vw;
+}
+@media only screen and (max-width: 1050px) {
+  .hero__container .join__container__position .join__container .join__left {
+    width: 33.5vw;
+  }
 }
 .hero__container .join__container__position .join__container .join__left .join__title {
   font-size: 30px;
   padding-bottom: 13px;
   position: relative;
+}
+@media only screen and (max-width: 1050px) {
+  .hero__container .join__container__position .join__container .join__left .join__title {
+    font-size: 26px;
+  }
+  .hero__container .join__container__position .join__container .join__left .join__title br {
+    display: none;
+  }
 }
 .hero__container .join__container__position .join__container .join__left .join__title::before {
   content: "";
@@ -585,6 +608,11 @@ footer .offices__container .social__media__container .social__media__item__foote
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
+}
+@media only screen and (max-width: 1050px) {
+  .hero__container .join__container__position .join__container .join__left .join__text {
+    font-size: 16px;
+  }
 }
 .hero__container .join__container__position .join__container .join__right {
   width: 11.5vw;
@@ -666,6 +694,13 @@ footer .offices__container .social__media__container .social__media__item__foote
   -ms-grid-row: 1;
   -ms-grid-column: 3;
 }
+@media only screen and (max-width: 1050px) {
+  .grid__layout--row {
+    -ms-grid-columns: auto 10px 30vw;
+    grid-template-columns: auto 30vw;
+    gap: 10px;
+  }
+}
 .grid__layout--row .image__cont__circle {
   max-width: 50vw;
 }
@@ -688,6 +723,27 @@ footer .offices__container .social__media__container .social__media__item__foote
   grid-row: 1/3;
   margin-top: -2vw;
 }
+@media only screen and (max-width: 1050px) {
+  .grid__layout .box--work {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/span 2;
+    width: auto;
+    margin-top: 0;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .grid__layout .box--programs {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/span 1;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .grid__layout .box--advocacy {
+    min-width: 30.8vw;
+  }
+}
 .grid__layout .box__title__cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,9 +764,9 @@ footer .offices__container .social__media__container .social__media__item__foote
   font-weight: 700;
   color: #0a5b66;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
   .grid__layout .box__title {
-    font-size: 48px;
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -726,9 +782,9 @@ footer .offices__container .social__media__container .social__media__item__foote
   color: #0a5b66;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
   .grid__layout .box__title--big {
-    font-size: 20px;
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -740,7 +796,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   color: #828282;
   font-size: 18px;
   line-height: 30px;
-  margin-top: 25px;
+  margin-top: 20px;
   min-height: 9vw;
 }
 .grid__layout .box .button {
@@ -776,6 +832,11 @@ footer .offices__container .social__media__container .social__media__item__foote
   color: #ffffff;
   background-color: #008987;
 }
+@media only screen and (max-width: 1050px) {
+  .grid__layout .box .button {
+    margin-bottom: 20px;
+  }
+}
 
 .dates {
   background-color: #00908e;
@@ -790,6 +851,11 @@ footer .offices__container .social__media__container .social__media__item__foote
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 74px;
+}
+@media only screen and (max-width: 1050px) {
+  .dates {
+    padding: 6vw 5vw 6vw 5vw;
+  }
 }
 .dates .date__item {
   padding: 5px 0 10px 0;
@@ -860,6 +926,11 @@ footer .offices__container .social__media__container .social__media__item__foote
   max-width: 7vw;
   position: relative;
 }
+@media only screen and (max-width: 1050px) {
+  .dates__images .dates__grid__layout .dates__grid__item .image-background {
+    max-width: 13vw;
+  }
+}
 .dates__images .dates__grid__layout .dates__grid__item span {
   margin-top: 23px;
   font-size: 1.9vw;
@@ -867,6 +938,11 @@ footer .offices__container .social__media__container .social__media__item__foote
   color: #ffffff;
   text-transform: uppercase;
   position: relative;
+}
+@media only screen and (max-width: 1050px) {
+  .dates__images .dates__grid__layout .dates__grid__item span {
+    font-size: 2.3vw;
+  }
 }
 .dates__images .dates__grid__layout .dates__grid__item::before {
   position: absolute;
@@ -902,9 +978,9 @@ footer .offices__container .social__media__container .social__media__item__foote
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding-top: 6.3vw;
 }
 .latest__title__cont {
@@ -1010,15 +1086,63 @@ footer .offices__container .social__media__container .social__media__item__foote
   min-height: auto;
   padding: 30px;
 }
+@media only screen and (max-width: 1050px) {
+  .latest__grid__layout .latest__item {
+    padding: 15px;
+  }
+}
 .latest__grid__layout .latest__item--first {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
 }
+@media only screen and (max-width: 1050px) {
+  .latest__grid__layout .latest__item--first {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/span 2;
+    width: auto;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .latest__grid__layout .latest__item--second {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-column: 3/span 4;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .latest__grid__layout .latest__item--third {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/span 2;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .latest__grid__layout .latest__item--fourth {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-column: 3/span 4;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .latest__grid__layout .latest__item--fifth {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/span 2;
+  }
+}
 .latest__grid__layout .latest__item--last {
   -ms-grid-column: 3;
   -ms-grid-column-span: 2;
   grid-column: 3/5;
+}
+@media only screen and (max-width: 1050px) {
+  .latest__grid__layout .latest__item--last {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 4;
+    grid-column: 3/span 4;
+  }
 }
 .latest__grid__layout .latest__item .latest__header {
   display: -webkit-box;
@@ -1042,10 +1166,15 @@ footer .offices__container .social__media__container .social__media__item__foote
 .latest__grid__layout .latest__item .latest__header .latest__header--left .upertitle, .latest__grid__layout .latest__item .latest__header .latest__header--right .upertitle {
   text-transform: uppercase;
   font-size: 14px;
-  line-height: 25px;
+  line-height: 1.3;
   padding-left: 30px;
   color: #00908e;
   position: relative;
+}
+@media only screen and (max-width: 1050px) {
+  .latest__grid__layout .latest__item .latest__header .latest__header--left .upertitle, .latest__grid__layout .latest__item .latest__header .latest__header--right .upertitle {
+    line-height: 1;
+  }
 }
 .latest__grid__layout .latest__item .latest__header .latest__header--left .upertitle::before, .latest__grid__layout .latest__item .latest__header .latest__header--right .upertitle::before {
   content: "";
@@ -1075,6 +1204,11 @@ footer .offices__container .social__media__container .social__media__item__foote
 .latest__grid__layout .latest__item .latest__main {
   max-width: 31.8vw;
 }
+@media only screen and (max-width: 1050px) {
+  .latest__grid__layout .latest__item .latest__main {
+    max-width: 44.8vw;
+  }
+}
 .latest__grid__layout .latest__item .latest__main .latest__title {
   font-size: 30px;
   font-family: "Source Sans Pro", "sans-serif";
@@ -1085,9 +1219,9 @@ footer .offices__container .social__media__container .social__media__item__foote
   font-weight: 700;
   color: #00908e;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
   .latest__grid__layout .latest__item .latest__main .latest__title {
-    font-size: 48px;
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1140,6 +1274,36 @@ footer .offices__container .social__media__container .social__media__item__foote
   -ms-grid-row: 2;
   -ms-grid-column: 3;
 }
+@media only screen and (max-width: 1050px) {
+  .social .social__container {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    -ms-grid-rows: (auto)[4];
+    grid-template-rows: repeat(4, auto);
+  }
+  .social .social__container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  .social .social__container > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  .social .social__container > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+  .social .social__container > *:nth-child(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .social .social__container .social__item {
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+  }
+}
 .social .social__container .social__item .social__post {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1151,6 +1315,17 @@ footer .offices__container .social__media__container .social__media__item__foote
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+@media only screen and (max-width: 1050px) {
+  .social .social__container .social__item .social__post {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 .social .social__container .social__item .social__post .post__image {
   max-width: 5.2vw;
@@ -1215,6 +1390,19 @@ footer .offices__container .social__media__container .social__media__item__foote
   width: 20vw;
   border-left: 1px solid #dad9d9;
 }
+@media only screen and (max-width: 1050px) {
+  .social .social__container .social__media__icons {
+    width: auto;
+    -ms-grid-row: 4;
+    grid-row: 4/4;
+    -ms-grid-column: 1;
+    grid-column: 1/1;
+    padding-left: 0;
+    border-top: 1px solid #dad9d9;
+    border-left: none;
+    margin-top: 40px;
+  }
+}
 .social .social__container .social__cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1223,6 +1411,11 @@ footer .offices__container .social__media__container .social__media__item__foote
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+}
+@media only screen and (max-width: 1050px) {
+  .social .social__container .social__cont {
+    margin-right: 7vw;
+  }
 }
 .social .social__container .social__cont .image-background {
   width: 32px;
@@ -1430,8 +1623,12 @@ footer .offices__container .social__media__container .social__media__item__foote
   min-height: 5.5vw;
 }
 .services .flex__layout .box__title__cont .icon__img {
-  width: 4vw;
+  width: 3.5vw;
   margin-right: 5px;
+}
+.services .flex__layout .box__title__cont .icon__img--reverse {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 .services .flex__layout .box__title {
   font-size: 30px;
@@ -1440,9 +1637,9 @@ footer .offices__container .social__media__container .social__media__item__foote
   font-weight: 700;
   color: #0a5b66;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
   .services .flex__layout .box__title {
-    font-size: 48px;
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -1458,9 +1655,9 @@ footer .offices__container .social__media__container .social__media__item__foote
   color: #0a5b66;
   text-transform: uppercase;
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
   .services .flex__layout .box__title--big {
-    font-size: 20px;
+    font-size: 40px;
   }
 }
 @media only screen and (max-width: 600px) {

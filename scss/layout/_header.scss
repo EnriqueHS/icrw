@@ -52,7 +52,7 @@ header {
       }
 
       .menu__sub {
-        @extend .container--sm;
+        @extend .container--s;
         position: absolute;
         top: 99%;
         left: 0;
@@ -61,7 +61,7 @@ header {
         display: none;
         min-height: 18vw;
         padding-top: 15px;
-        padding-bottom: 15px;
+        padding-bottom: 15px; 
 
         .menu__sub_ul {
           width: 20.8vw;

@@ -20,15 +20,19 @@ html{
   @include default-font();
 }
 
-.container--middle{
+.container--l{
   width: 100%; 
   max-width: 100%;
 }
 
-.container--sm{
+.container--s{
   width: 100%;
   padding: 0 80px;
-}
+
+  @include responsive ('tablet-h') {
+    padding: 0 40px;
+  }
+} 
 
 
 

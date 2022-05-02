@@ -13,6 +13,11 @@
     align-items: center;
     justify-content: space-around;
 
+    @include responsive ('tablet-h') {
+      grid-template-columns: auto 30vw;
+      gap: 10px;
+    }
+
     .image__cont__circle {
       max-width: 50vw;
     }
@@ -27,6 +32,26 @@
     &--work {
       grid-row: 1/3;
       margin-top: -2vw;
+
+      @include responsive ('tablet-h') {
+        grid-column:1 / span 2; 
+        width: auto;
+        margin-top: 0;
+      }
+    }
+
+    &--programs {
+
+      @include responsive ('tablet-h') {
+        grid-column:1 / span 1 ;
+      }
+    }
+
+    &--advocacy {
+
+      @include responsive ('tablet-h') {
+        min-width: 30.8vw;
+      }
     }
 
     &__title__cont {
@@ -56,7 +81,7 @@
       color: $primary-color; 
       font-size:18px ;
       line-height: 30px;
-      margin-top: 25px;
+      margin-top: 20px;
       min-height: 9vw;
     }
 
@@ -66,6 +91,10 @@
       padding: 10px 0;
       background-color: $white;
       margin-top: 30px; 
+
+      @include responsive ('tablet-h') {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -80,7 +109,9 @@
   justify-content: space-between;
   margin-top: 74px;
 
-  
+  @include responsive ('tablet-h') {
+    padding: 6vw 5vw 6vw 5vw;
+  }
 
   .date__item {
     padding: 5px 0 10px 0;
@@ -128,6 +159,10 @@
       .image-background {
         max-width: 7vw;
         position: relative;
+
+        @include responsive ('tablet-h') {
+          max-width: 13vw;
+        }
       }
 
       span {
@@ -137,6 +172,10 @@
         color: $white;
         text-transform: uppercase;
         position: relative;
+
+        @include responsive ('tablet-h') {
+          font-size: 2.3vw;
+        }
       }
     }
     
@@ -164,7 +203,7 @@
 .latest {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding-top: 6.3vw;
 
   &__title__cont {
@@ -199,12 +238,53 @@
     min-height: auto;//30
     padding: 30px;
 
+    @include responsive ('tablet-h') {
+      padding: 15px;
+    }
+
     &--first {
       grid-column: 1 / 3;
+
+      @include responsive ('tablet-h') {
+        grid-column:1 / span 2; 
+        width: auto;
+      }
     }
+
+    &--second {
+
+      @include responsive ('tablet-h') {
+        grid-column:3 / span 4;
+      }
+    }
+
+    &--third {
+
+      @include responsive ('tablet-h') {
+        grid-column: 1 / span 2;
+      }
+    }
+
+    &--fourth {
+
+      @include responsive ('tablet-h') {
+        grid-column: 3 / span 4;
+      }
+    } 
+
+    &--fifth {
+
+      @include responsive ('tablet-h') {
+        grid-column: 1 / span 2;
+      }
+    } 
 
     &--last {
       grid-column: 3 / 5;
+
+      @include responsive ('tablet-h') {
+        grid-column: 3 / span 4;
+      }
     }
 
     .latest__header {
@@ -219,10 +299,14 @@
         .upertitle {
           text-transform: uppercase;
           font-size: 14px;
-          line-height: 25px;
+          line-height: 1.3;
           padding-left: 30px;
           color: $darker-green-bg-secondary;
           position: relative;
+
+          @include responsive ('tablet-h') {
+            line-height: 1;
+          }
   
           &::before {
             content: "";
@@ -258,6 +342,10 @@
     .latest__main {
       max-width: 31.8vw;
 
+      @include responsive ('tablet-h') {
+        max-width: 44.8vw;
+      }
+
       .latest__title {
         @include h3 ();
         padding-top:27px ;
@@ -284,7 +372,6 @@
   }
 }
 
-
 .social {
 
   .social__container {
@@ -294,12 +381,25 @@
     column-gap: 20px;
     margin-top: 115px;
 
+    @include responsive ('tablet-h') {
+      grid-template-columns: auto ;
+      grid-template-rows: repeat(4, auto);
+    }
+
     .social__item {
 
+      @include responsive ('tablet-h') {
+        grid-column: 1/1;
+      }
       .social__post {
         display: flex;
         align-items: flex-start;
         flex-direction: column;
+
+        @include responsive ('tablet-h') {
+          justify-content: flex-start;
+          flex-direction: row;
+        }
 
         .post__image {
           max-width: 5.2vw;
@@ -349,19 +449,31 @@
       }
     }
 
-    
-
     .social__media__icons {
       grid-column: 2 / 4;
       grid-row: 1 / 4;
       padding-left: 20px;
       width: 20vw;
       border-left: 1px solid $dark-grey-border;
+
+      @include responsive ('tablet-h') {
+        width: auto;
+        grid-row: 4/4;
+        grid-column: 1/1;
+        padding-left: 0;
+        border-top: 1px solid $dark-grey-border;
+        border-left: none;
+        margin-top: 40px;
+      }
     }
     
     .social__cont {
       display: flex;
       flex-direction: column-reverse;
+
+      @include responsive ('tablet-h') {
+        margin-right: 7vw;
+      }
 
       .image-background {
         width: 32px;

@@ -122,8 +122,12 @@
         min-height: 5.5vw;
         
         .icon__img {
-          width: 4vw;
+          width: 3.5vw;
           margin-right: 5px;
+
+          &--reverse {
+            transform: scaleX(-1);
+          }
         }
       }
   
