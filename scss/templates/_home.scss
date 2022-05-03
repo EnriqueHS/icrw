@@ -12,6 +12,7 @@
     gap: 30px;
     align-items: center;
     justify-content: space-around;
+    padding-top: 60px;
 
     @include responsive ('tablet-h') {
       grid-template-columns: auto 30vw;
@@ -79,6 +80,7 @@
 
     &__text {
       color: $primary-color; 
+      font-family: $georgia;
       font-size:18px ;
       line-height: 30px;
       margin-top: 20px;
@@ -110,7 +112,7 @@
   margin-top: 74px;
 
   @include responsive ('tablet-h') {
-    padding: 6vw 5vw 6vw 5vw;
+    padding: 5vw 3vw 5vw 2vw;
   }
 
   .date__item {
@@ -119,6 +121,10 @@
     text-align: center;
     border-right: 1px solid $white;
     min-width: 18vw;
+
+    @include responsive ('tablet-h') {
+      padding: 10px;
+    }
 
     .date__number {
       color: $white;
@@ -157,7 +163,7 @@
       position: relative;
       
       .image-background {
-        max-width: 7vw;
+        min-width: 6.7vw;
         position: relative;
 
         @include responsive ('tablet-h') {
@@ -240,6 +246,7 @@
 
     @include responsive ('tablet-h') {
       padding: 15px;
+      min-height: 19vw;
     }
 
     &--first {
@@ -362,11 +369,20 @@
           color: $dark-grey-txt;
           font-size: 20px;
         }
+
+        @include responsive ('tablet-h') {
+          font-size: 18px;
+        }
       }
 
       .latest__text {
         font-size:16px ;
         color: $dark-grey-text;
+        font-family: $georgia;
+
+        @include responsive ('tablet-h') {
+          font-size: 14px;
+        }
       }
     }
   }
@@ -414,6 +430,10 @@
             font-size: 16px;
             color: $dark-grey-post;
             line-height: 1.6;
+
+            @include responsive ('tablet-h') {
+              font-size: 14px;
+            }
           }
 
           a {
@@ -481,7 +501,7 @@
         margin-right: 1vw;
 
         &--facebook {
-          width: 12px;
+          width: 14px;
           height: auto;
         }
       }

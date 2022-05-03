@@ -1,6 +1,5 @@
 // @type List
 $sourcesanspro: 'Source Sans Pro', 'sans-serif' !default; 
-$gotham: 'Gotham', 'sans-serif' !default;
 $georgia: 'Georgia', 'Times New Roman', 'Times, serif' !default;
 
 
@@ -44,9 +43,9 @@ $site-widths: (
 ) !default;
 
 $font-sizes: (
-  'h1': 80px, //4.8vw
-  'h2': 50px, //3.1vw
-  'h3': 30px, //2.8vw,
+  'h1': 6.3vw, //80px
+  'h2': 4vw, //50
+  'h3': 2.4vw, //30px
   'h4': 1.4vw,
   'h5': 16px,
   'h6': 0.98vw,

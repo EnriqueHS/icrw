@@ -52,6 +52,11 @@ html {
     padding: 0 40px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .container--s, header nav .menu__item .menu__sub {
+    padding: 0 20px;
+  }
+}
 
 p {
   font-family: "Source Sans Pro", "sans-serif";
@@ -90,21 +95,19 @@ header nav li {
   font-size: 16px;
 }
 header nav .logo__cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  border: 1px solid;
 }
 header nav .logo {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   width: 28.3vw;
-  margin: 0 80px 0 70px;
+  margin: 0 8vw 0 7.5vw;
+}
+@media only screen and (max-width: 1050px) {
+  header nav .logo {
+    margin: 0 4vw 0 3.5vw;
+    width: 25.3vw;
+  }
 }
 header nav .menu__main {
   display: -webkit-box;
@@ -123,14 +126,24 @@ header nav .menu__item {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+}
+@media only screen and (max-width: 1050px) {
+  header nav .menu__item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 header nav .menu__item__link {
   font-size: 16px;
   color: #ffffff;
   padding: 0 18px 11px 0;
   text-transform: uppercase;
+}
+@media only screen and (max-width: 1050px) {
+  header nav .menu__item__link {
+    padding: 0 15px 0px 0;
+  }
 }
 header nav .menu__item .menu__sub {
   position: absolute;
@@ -142,6 +155,11 @@ header nav .menu__item .menu__sub {
   min-height: 18vw;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+@media only screen and (max-width: 1050px) {
+  header nav .menu__item .menu__sub {
+    padding-top: 20px;
+  }
 }
 header nav .menu__item .menu__sub .menu__sub_ul {
   width: 20.8vw;
@@ -261,6 +279,11 @@ footer .subfooter__grid__layout .subfooter__item {
   min-height: auto;
   padding: 40px 80px 25px 80px;
 }
+@media only screen and (max-width: 1050px) {
+  footer .subfooter__grid__layout .subfooter__item {
+    padding: 40px 40px 30px 40px;
+  }
+}
 footer .subfooter__grid__layout .subfooter__item--red {
   background-color: #e33f2c;
 }
@@ -328,7 +351,7 @@ footer .subfooter__grid__layout .subfooter__item .subfooter__main {
   max-width: 25.8vw;
 }
 footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__title {
-  font-size: 30px;
+  font-size: 2.4vw;
   font-family: "Source Sans Pro", "sans-serif";
   line-height: 1.1;
   font-weight: 700;
@@ -356,10 +379,17 @@ footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__ti
   font-size: 20px;
 }
 footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__text {
+  font-family: "Georgia", "Times New Roman", "Times, serif";
   font-size: 16px;
   color: #ffffff;
   line-height: 1.6;
   min-height: 9.5vw;
+}
+@media only screen and (max-width: 1050px) {
+  footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__text {
+    min-height: 17.5vw;
+    font-size: 12px;
+  }
 }
 footer .subfooter__grid__layout .subfooter__item .button {
   font-size: 16px;
@@ -458,12 +488,18 @@ footer .offices__container .offices__links {
       -ms-flex-align: center;
           align-items: center;
 }
+@media only screen and (max-width: 1050px) {
+  footer .offices__container .offices__links {
+    width: 70vw;
+  }
+}
 footer .offices__container .offices__links a {
   color: #88878d;
   font-weight: 700;
   padding: 0 22px;
   font-size: 16px;
   text-transform: uppercase;
+  line-height: 1;
 }
 footer .offices__container .offices__links .left a {
   font-weight: 400;
@@ -486,6 +522,11 @@ footer .offices__container .social__media__container {
 }
 footer .offices__container .social__media__container .social__media__item__footer {
   margin-right: 21px;
+}
+@media only screen and (max-width: 1050px) {
+  footer .offices__container .social__media__container .social__media__item__footer {
+    margin-right: 15px;
+  }
 }
 
 .hero__container {
@@ -512,7 +553,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   height: 45vw;
 }
 .hero__container .hero__text .hero__title {
-  font-size: 50px;
+  font-size: 4vw;
   font-family: "Source Sans Pro", "sans-serif";
   line-height: 1.1;
   font-weight: 700;
@@ -531,10 +572,15 @@ footer .offices__container .social__media__container .social__media__item__foote
     font-size: 18px;
   }
 }
+@media only screen and (max-width: 1050px) {
+  .hero__container .hero__text .hero__title {
+    width: 50vw;
+  }
+}
 .hero__container .hero__text .hero__title::before {
   content: "";
   position: absolute;
-  top: 15px;
+  top: 25px;
   left: -40px;
   font-size: 20px;
   width: 22px;
@@ -551,10 +597,16 @@ footer .offices__container .social__media__container .social__media__item__foote
   }
 }
 .hero__container .hero__text .hero__text__content {
+  font-family: "Georgia", "Times New Roman", "Times, serif";
   font-size: 16px;
   color: #d8d8d8;
   width: 33.5vw;
   line-height: 1.6;
+}
+@media only screen and (max-width: 1050px) {
+  .hero__container .hero__text .hero__text__content {
+    width: 38.5vw;
+  }
 }
 .hero__container .join__container__position {
   position: relative;
@@ -612,6 +664,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   border: 1px solid #979797;
 }
 .hero__container .join__container__position .join__container .join__left .join__text {
+  font-family: "Georgia", "Times New Roman", "Times, serif";
   font-size: 18px;
   font-weight: 400;
   line-height: 1.6;
@@ -635,6 +688,11 @@ footer .offices__container .social__media__container .social__media__item__foote
   color: #ffffff;
   margin-right: 16px;
   font-weight: 400;
+}
+@media only screen and (max-width: 1050px) {
+  .hero__container .join__container__position .join__container .join__right span {
+    font-size: 18px;
+  }
 }
 .hero__container .join__container__position .join__container .join__right .join__action {
   width: 2.6vw;
@@ -692,6 +750,7 @@ footer .offices__container .social__media__container .social__media__item__foote
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding-top: 60px;
 }
 .grid__layout--row > *:nth-child(1) {
   -ms-grid-row: 1;
@@ -765,7 +824,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   margin-right: 10px;
 }
 .grid__layout .box__title {
-  font-size: 30px;
+  font-size: 2.4vw;
   font-family: "Source Sans Pro", "sans-serif";
   line-height: 1.1;
   font-weight: 700;
@@ -782,7 +841,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   }
 }
 .grid__layout .box__title--big {
-  font-size: 50px;
+  font-size: 4vw;
   font-family: "Source Sans Pro", "sans-serif";
   line-height: 1.1;
   font-weight: 700;
@@ -801,6 +860,7 @@ footer .offices__container .social__media__container .social__media__item__foote
 }
 .grid__layout .box__text {
   color: #828282;
+  font-family: "Georgia", "Times New Roman", "Times, serif";
   font-size: 18px;
   line-height: 30px;
   margin-top: 20px;
@@ -861,7 +921,7 @@ footer .offices__container .social__media__container .social__media__item__foote
 }
 @media only screen and (max-width: 1050px) {
   .dates {
-    padding: 6vw 5vw 6vw 5vw;
+    padding: 5vw 3vw 5vw 2vw;
   }
 }
 .dates .date__item {
@@ -869,6 +929,11 @@ footer .offices__container .social__media__container .social__media__item__foote
   text-align: center;
   border-right: 1px solid #ffffff;
   min-width: 18vw;
+}
+@media only screen and (max-width: 1050px) {
+  .dates .date__item {
+    padding: 10px;
+  }
 }
 .dates .date__item .date__number {
   color: #ffffff;
@@ -930,7 +995,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   position: relative;
 }
 .dates__images .dates__grid__layout .dates__grid__item .image-background {
-  max-width: 7vw;
+  min-width: 6.7vw;
   position: relative;
 }
 @media only screen and (max-width: 1050px) {
@@ -1096,6 +1161,7 @@ footer .offices__container .social__media__container .social__media__item__foote
 @media only screen and (max-width: 1050px) {
   .latest__grid__layout .latest__item {
     padding: 15px;
+    min-height: 19vw;
   }
 }
 .latest__grid__layout .latest__item--first {
@@ -1217,7 +1283,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   }
 }
 .latest__grid__layout .latest__item .latest__main .latest__title {
-  font-size: 30px;
+  font-size: 2.4vw;
   font-family: "Source Sans Pro", "sans-serif";
   line-height: 1.1;
   font-weight: 700;
@@ -1244,9 +1310,20 @@ footer .offices__container .social__media__container .social__media__item__foote
   color: #3a4049;
   font-size: 20px;
 }
+@media only screen and (max-width: 1050px) {
+  .latest__grid__layout .latest__item .latest__main .latest__title {
+    font-size: 18px;
+  }
+}
 .latest__grid__layout .latest__item .latest__main .latest__text {
   font-size: 16px;
   color: #acacb1;
+  font-family: "Georgia", "Times New Roman", "Times, serif";
+}
+@media only screen and (max-width: 1050px) {
+  .latest__grid__layout .latest__item .latest__main .latest__text {
+    font-size: 14px;
+  }
 }
 
 .social .social__container {
@@ -1352,6 +1429,11 @@ footer .offices__container .social__media__container .social__media__item__foote
   color: #8d8d8d;
   line-height: 1.6;
 }
+@media only screen and (max-width: 1050px) {
+  .social .social__container .social__item .social__post .post__text p {
+    font-size: 14px;
+  }
+}
 .social .social__container .social__item .social__post .post__text a {
   color: #00908e;
 }
@@ -1430,7 +1512,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   margin-right: 1vw;
 }
 .social .social__container .social__cont .image-background--facebook {
-  width: 12px;
+  width: 14px;
   height: auto;
 }
 .social .social__container .social__cont span {
@@ -1638,7 +1720,7 @@ footer .offices__container .social__media__container .social__media__item__foote
           transform: scaleX(-1);
 }
 .services .flex__layout .box__title {
-  font-size: 30px;
+  font-size: 2.4vw;
   font-family: "Source Sans Pro", "sans-serif";
   line-height: 1.1;
   font-weight: 700;
@@ -1655,7 +1737,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   }
 }
 .services .flex__layout .box__title--big {
-  font-size: 50px;
+  font-size: 4vw;
   font-family: "Source Sans Pro", "sans-serif";
   line-height: 1.1;
   font-weight: 700;

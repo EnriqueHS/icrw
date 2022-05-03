@@ -11,6 +11,10 @@ footer {
             min-height: auto; //30
 						padding: 40px 80px 25px 80px;
 
+						@include responsive ('tablet-h') {
+							padding: 40px 40px 30px 40px;
+						}
+
 						&--red {
 							background-color: $dark-red;
 						}
@@ -27,7 +31,7 @@ footer {
                 justify-content: space-between;
                 align-items: center;
 
-                .subfooter__header--left {
+                .subfooter__header--left { 
                     display: flex;
                     align-items: center;
 
@@ -94,10 +98,16 @@ footer {
                 }
 
                 .subfooter__text {
+										font-family: $georgia;
                     font-size: 16px;
                     color: $white;
 										line-height: 1.6;
 										min-height: 9.5vw;
+
+										@include responsive ('tablet-h') {
+											min-height: 17.5vw;
+											font-size: 12px;
+										}
                 }
             }
 
@@ -176,12 +186,17 @@ footer {
 				display: flex;
 				align-items: center;
 
+				@include responsive ('tablet-h') {
+					width: 70vw;
+				}
+
 				a {
 					color: $dark-grey-footer;
 					font-weight: 700;
 					padding: 0 22px;
 					font-size: 16px;
 					text-transform: uppercase;
+					line-height: 1;
 				}
 
 			
@@ -204,6 +219,10 @@ footer {
 
 				.social__media__item__footer {
 					margin-right: 21px;
+
+					@include responsive ('tablet-h') {
+						margin-right: 15px;
+					}
 				}
 			}
 		}

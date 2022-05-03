@@ -6,7 +6,7 @@
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #000 0%);
     background: url(../files/hero.jpg) no-repeat center center / cover;
     
-    .hero__text {
+    .hero__text { 
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -19,11 +19,15 @@
         width: 43vw;
         color: $white;
         padding-bottom: 1.4vw;
+
+        @include responsive ('tablet-h') {
+          width: 50vw;
+        }
     
         &::before {
           content: "";
           position: absolute;
-          top: 15px;
+          top: 25px;
           left: -40px;
           font-size: 20px;
           width: 22px;
@@ -40,10 +44,15 @@
       }
   
       .hero__text__content {
+        font-family: $georgia;
         font-size: 16px;
         color: $third-color;
         width: 33.5vw;
         line-height: 1.6;
+
+        @include responsive ('tablet-h') {
+          width: 38.5vw;
+        }
       }
     }
 
@@ -101,6 +110,7 @@
           }
 
           .join__text{
+            font-family: $georgia;
             font-size:18px ;
             font-weight: 400;
             line-height: 1.6;
@@ -121,6 +131,10 @@
             color: $white;
             margin-right: 16px;
             font-weight: 400;
+
+            @include responsive ('tablet-h') {
+              font-size: 18px;
+            }
           }
 
           .join__action{

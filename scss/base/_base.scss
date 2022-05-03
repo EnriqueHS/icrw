@@ -32,6 +32,10 @@ html{
   @include responsive ('tablet-h') {
     padding: 0 40px;
   }
+
+  @include responsive ('mobile-v') {
+    padding: 0 20px;
+  }
 } 
 
 
