@@ -30,7 +30,7 @@ html{
   padding: 0 80px;
 
   @include responsive ('tablet-h') {
-    padding: 0 40px;
+    padding: 0 50px;
   }
 
   @include responsive ('mobile-v') {
@@ -38,7 +38,9 @@ html{
   }
 } 
 
-
+.wrapper {
+  overflow: hidden;
+}
 
 p {
   @include default-font();

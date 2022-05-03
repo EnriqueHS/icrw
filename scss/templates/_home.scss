@@ -6,6 +6,10 @@
   width: 100%;
   padding-top: 130px;
 
+  @include responsive ('tablet-h') {
+    padding-top: 26vw;
+  }
+
   &--row {
     grid-template-columns: auto auto;
     grid-template-rows: auto;
@@ -30,28 +34,28 @@
     justify-content: flex-start;
     width: 26.8vw;
 
+    @include responsive ('tablet-h') {
+      grid-column: 1 /span 3;
+      width: auto;
+    }
+
     &--work {
       grid-row: 1/3;
       margin-top: -2vw;
 
-      @include responsive ('tablet-h') {
-        grid-column:1 / span 2; 
-        width: auto;
-        margin-top: 0;
-      }
     }
 
     &--programs {
 
       @include responsive ('tablet-h') {
-        grid-column:1 / span 1 ;
+      
       }
     }
 
     &--advocacy {
 
       @include responsive ('tablet-h') {
-        min-width: 30.8vw;
+    
       }
     }
 
