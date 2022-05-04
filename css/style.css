@@ -311,7 +311,7 @@ footer .subfooter__grid__layout > *:nth-child(3) {
 footer .subfooter__grid__layout .subfooter__item {
   background-color: #f5f5f7;
   min-height: auto;
-  padding: 40px 80px 25px 80px;
+  padding: 40px 75px 25px 75px;
 }
 @media only screen and (max-width: 1050px) {
   footer .subfooter__grid__layout .subfooter__item {
@@ -360,6 +360,11 @@ footer .subfooter__grid__layout .subfooter__item .subfooter__header .subfooter__
 @media only screen and (max-width: 1050px) {
   footer .subfooter__grid__layout .subfooter__item .subfooter__header .subfooter__header--left .upertitle {
     padding-left: 5.1vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  footer .subfooter__grid__layout .subfooter__item .subfooter__header .subfooter__header--left .upertitle {
+    padding-left: 8.1vw;
   }
 }
 footer .subfooter__grid__layout .subfooter__item .subfooter__header .subfooter__header--left .upertitle::before {
@@ -428,18 +433,18 @@ footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__te
   font-size: 16px;
   color: #ffffff;
   line-height: 1.6;
-  min-height: 9.5vw;
+  min-height: 14.5vw;
 }
 @media only screen and (max-width: 1050px) {
   footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__text {
     min-height: 11.5vw;
     font-size: 12px;
-    max-width: 60.8vw;
+    width: 60.8vw;
   }
 }
 @media only screen and (max-width: 600px) {
   footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__text {
-    width: 82.8vw;
+    width: 80.8vw;
   }
 }
 footer .subfooter__grid__layout .subfooter__item .button {
@@ -1618,7 +1623,7 @@ footer .offices__container .social__media__container .social__media__item__foote
 }
 @media only screen and (max-width: 1050px) {
   .latest__grid__layout .latest__item .latest__main {
-    max-width: 44.8vw;
+    max-width: 71.8vw;
   }
 }
 .latest__grid__layout .latest__item .latest__main .latest__title {

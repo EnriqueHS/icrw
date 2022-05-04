@@ -9,7 +9,7 @@ footer {
         .subfooter__item {
             background-color: $light-grey;
             min-height: auto; //30
-						padding: 40px 80px 25px 80px;
+						padding: 40px 75px 25px 75px;
 
 						@include responsive ('tablet-h') {
 							padding: 40px 40px 30px 40px;
@@ -48,6 +48,10 @@ footer {
 
 												@include responsive ('tablet-h') {
 													padding-left: 5.1vw;
+												}
+
+												@include responsive ('mobile-v') {
+													padding-left: 8.1vw;
 												}
 
                         &::before {
@@ -112,16 +116,16 @@ footer {
                     font-size: 16px;
                     color: $white;
 										line-height: 1.6;
-										min-height: 9.5vw;
+										min-height: 14.5vw;
 
 										@include responsive ('tablet-h') {
 											min-height: 11.5vw;
 											font-size: 12px;
-											max-width: 60.8vw;
+											width: 60.8vw;
 										}
 
 										@include responsive ('mobile-v') {
-											width: 82.8vw;
+											width: 80.8vw;
 										}
                 }
             }
