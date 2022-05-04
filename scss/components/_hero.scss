@@ -5,6 +5,10 @@
     background-size: 100%;
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0), #000 0%);
     background: url(../files/hero.jpg) no-repeat center center / cover;
+
+    @include responsive ('mobile-v') {
+      height: 65vw;
+    }
     
     .hero__text { 
       display: flex;
@@ -15,6 +19,10 @@
       
       @include responsive ('tablet-h') {
         height: 57vw;
+      }
+
+      @include responsive ('mobile-v') {
+        padding: 0 30px;
       }
   
       .hero__title {
@@ -47,6 +55,10 @@
             width: 15px;
             height: 15px;
           }
+
+          @include responsive ('mobile-v') {
+            left: -5vw;
+          }
         }
       }
   
@@ -59,6 +71,10 @@
 
         @include responsive ('tablet-h') {
           width: 55.5vw;
+        }
+
+        @include responsive ('mobile-v') {
+          font-size: 14px;
         }
       }
     }
@@ -73,7 +89,7 @@
         background-color:$dark-red ;
         position: absolute;
         bottom: -3vw;
-        right: 0;
+        right: 5vw;
         display: flex;
         justify-content: space-around;
         padding: 20px 0 0 80px;
@@ -86,6 +102,11 @@
           height: auto;
           justify-content: space-between;
         }
+
+        @include responsive ('mobile-v') {
+          bottom: -30vw;
+          padding: 30px 50px;
+        }
   
         .join__left{
           color: $white;
@@ -93,6 +114,10 @@
           
           @include responsive ('tablet-h'){
             width: 55.5vw;
+          }
+
+          @include responsive ('mobile-v') {
+            width: 65.5vw;
           }
   
           .join__title{
@@ -130,6 +155,10 @@
             @include responsive ('tablet-h') {
               font-size: 16px;
             }
+
+            @include responsive ('mobile-v') {
+              font-size: 14px;
+            }
           }
         }
 
@@ -141,6 +170,10 @@
           @include responsive ('tablet-h') {
             justify-content: flex-end;
             width: 15.5vw;
+          }
+
+          @include responsive ('mobile-v') {
+            width: 17.5vw;
           }
           
           span{

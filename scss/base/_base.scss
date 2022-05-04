@@ -18,6 +18,7 @@ html {
 
 html{
   @include default-font();
+  width: 100%; 
 }
 
 .container--l{
@@ -46,6 +47,26 @@ p {
   @include default-font();
 
   
+}
+
+.menu-desk {
+
+  display: flex;
+
+  @include responsive ('tablet-h') {
+    display: none;
+  }
+}
+
+.menu-responsive {
+  display: none;
+
+  @include responsive ('tablet-h') {
+    display: block;
+    height: 5.5vw;
+    width: 100%;
+    position: relative;
+  }
 }
 
 

@@ -62,8 +62,8 @@ $font-sizes-tablet: (
 
 $font-sizes-mobile: (
   'h1': 46px,
-  'h2': 18px,
-  'h3': 32px,
+  'h2': 32px,
+  'h3': 26px,
   'h4': 18px,
   'h5': 12px,
   'h6': 0.4vw,
@@ -86,7 +86,7 @@ $breakpoints: (
 'mobile-v': 600px, 
 'mobile-l': 675px,
 'mobile-h': 750px,
-'mobile-c': 768px,
+'tablet-m': 768px,
 'tablet-v': 900px, 
 'tablet-h': 1050px,
 'desktop-m': 1200px,

@@ -5,6 +5,7 @@ header {
   top:0;
   z-index: 10;
   font-size: 75px;
+  overflow: hidden;
 
   nav{
     display: flex;
@@ -14,6 +15,10 @@ header {
     cursor: pointer;
     height: 5.5vw;
       position: relative;
+
+      @include responsive ('tablet-h') {
+        height: auto;
+      }
     
       li {
         display: inline-block;
@@ -21,13 +26,17 @@ header {
       }
 
     .logo {
-      transition: all 0.5s ease;
-      width: 28.3vw;
-      margin: 0 8vw 0 7.5vw;
+      width: 29.3vw;
+      margin: 0 3vw 0 2.5vw;
 
       @include responsive ('tablet-h') {
         margin: 0 4vw 0 3.5vw;
         width: 25.3vw;
+      }
+
+      @include responsive ('mobile-v') {
+        width: 47.3vw;
+        margin-top: -3vw;
       }
     }
 
@@ -69,14 +78,14 @@ header {
         padding-top: 15px;
         padding-bottom: 15px; 
 
-        @include responsive ('tablet-h') {
+        @include responsive ('tablet-h') { 
           padding-top: 20px;
         }
 
         .menu__sub_ul {
           width: 20.8vw;
           margin-right: 20px;
-          display:inline-grid;
+          display: inline-grid;
         }
 
         & li a {
@@ -112,20 +121,21 @@ header {
 
       }
     }
+
     .donate{
       background-color: $dark-red;
-      width: 20.1vw;
+      //width: 14.1vw;
     }
 
     .firts{
-      background-color:$light-green-bg;
+      background-color:$light-green-bg; 
 
 
       &:hover {
         background-color: $dark-buttom-hover;
 
       }
-      &:hover .menu__sub {
+      &:hover .menu__sub{
         background-color: $dark-buttom-hover;
         display: block;
       }
