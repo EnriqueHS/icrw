@@ -285,6 +285,10 @@
   align-items: flex-start;
   padding-top: 6.3vw;
 
+  @include responsive ('mobile-v') {
+    padding-top: 12.3vw;
+  }
+
   &__title__cont {
     @include icon-title ();
     margin-bottom: 25px;
@@ -319,6 +323,10 @@
   @include responsive ('tablet-h') {
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
+  }
+
+  @include responsive ('mobile-v') {
+    gap: 3.5vw;
   }
 
   .latest__item {
@@ -508,6 +516,10 @@
       grid-template-rows: repeat(4, auto);
     }
 
+    @include responsive ('mobile-v') {
+      margin-top: 12.3vw;
+    }
+
     .social__item {
 
       @include responsive ('tablet-h') {
@@ -521,6 +533,10 @@
         @include responsive ('tablet-h') {
           justify-content: flex-start;
           flex-direction: row;
+        }
+
+        @include responsive ('mobile-v') {
+          justify-content: space-between;
         }
 
         .post__image {
@@ -601,10 +617,18 @@
         margin-right: 7vw;
       }
 
+      @include responsive ('mobile-v') {
+        margin-right: 0;
+      }
+
       .image-background {
         width: 32px;
         height: 30px;
         margin-right: 1vw;
+
+        @include responsive ('mobile-v') {
+          margin-right: 2vw;
+        }
 
         &--facebook {
           width: 14px;

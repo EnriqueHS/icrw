@@ -1319,6 +1319,11 @@ footer .offices__container .social__media__container .social__media__item__foote
           align-items: flex-start;
   padding-top: 6.3vw;
 }
+@media only screen and (max-width: 600px) {
+  .latest {
+    padding-top: 12.3vw;
+  }
+}
 .latest__title__cont {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1444,6 +1449,11 @@ footer .offices__container .social__media__container .social__media__item__foote
   .latest__grid__layout > *:nth-child(4) {
     -ms-grid-row: 1;
     -ms-grid-column: 4;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .latest__grid__layout {
+    gap: 3.5vw;
   }
 }
 .latest__grid__layout .latest__item {
@@ -1705,6 +1715,11 @@ footer .offices__container .social__media__container .social__media__item__foote
     -ms-grid-column: 1;
   }
 }
+@media only screen and (max-width: 600px) {
+  .social .social__container {
+    margin-top: 12.3vw;
+  }
+}
 @media only screen and (max-width: 1050px) {
   .social .social__container .social__item {
     -ms-grid-column: 1;
@@ -1732,6 +1747,13 @@ footer .offices__container .social__media__container .social__media__item__foote
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .social .social__container .social__item .social__post {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 .social .social__container .social__item .social__post .post__image {
@@ -1829,10 +1851,20 @@ footer .offices__container .social__media__container .social__media__item__foote
     margin-right: 7vw;
   }
 }
+@media only screen and (max-width: 600px) {
+  .social .social__container .social__cont {
+    margin-right: 0;
+  }
+}
 .social .social__container .social__cont .image-background {
   width: 32px;
   height: 30px;
   margin-right: 1vw;
+}
+@media only screen and (max-width: 600px) {
+  .social .social__container .social__cont .image-background {
+    margin-right: 2vw;
+  }
 }
 .social .social__container .social__cont .image-background--facebook {
   width: 14px;
