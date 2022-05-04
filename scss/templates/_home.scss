@@ -182,7 +182,7 @@
     .date__text {
       color: $white;
       text-align: center;
-      font-size: 2vw;
+      font-size: 1.2;
 
       @include responsive ('tablet-h') {
         font-size: 1.8vw;

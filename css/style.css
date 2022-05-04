@@ -1171,7 +1171,7 @@ footer .offices__container .social__media__container .social__media__item__foote
 .dates .date__item .date__text {
   color: #ffffff;
   text-align: center;
-  font-size: 2vw;
+  font-size: 1.2;
 }
 @media only screen and (max-width: 1050px) {
   .dates .date__item .date__text {
