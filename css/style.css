@@ -916,7 +916,9 @@ footer .offices__container .social__media__container .social__media__item__foote
 }
 @media only screen and (max-width: 600px) {
   .hero__container .join__container__position .join__container .join__right {
-    width: 17.5vw;
+    width: 32.5vw;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
   }
 }
 .hero__container .join__container__position .join__container .join__right span {
@@ -1304,13 +1306,23 @@ footer .offices__container .social__media__container .social__media__item__foote
     height: 30vw;
   }
 }
+@media only screen and (max-width: 600px) {
+  .dates__images .dates__grid__layout .dates__grid__item {
+    height: 45vw;
+  }
+}
 .dates__images .dates__grid__layout .dates__grid__item .image-background {
   min-width: 6.7vw;
   position: relative;
 }
 @media only screen and (max-width: 1050px) {
   .dates__images .dates__grid__layout .dates__grid__item .image-background {
-    max-width: 13vw;
+    min-width: 13vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dates__images .dates__grid__layout .dates__grid__item .image-background {
+    min-width: 20vw;
   }
 }
 .dates__images .dates__grid__layout .dates__grid__item span {
@@ -1325,6 +1337,11 @@ footer .offices__container .social__media__container .social__media__item__foote
   .dates__images .dates__grid__layout .dates__grid__item span {
     font-size: 2.3vw;
     margin-top: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dates__images .dates__grid__layout .dates__grid__item span {
+    font-size: 4.3vw;
   }
 }
 .dates__images .dates__grid__layout .dates__grid__item::before {
@@ -1347,6 +1364,11 @@ footer .offices__container .social__media__container .social__media__item__foote
 @media only screen and (max-width: 1050px) {
   .dates__images .dates__grid__layout .dates__grid__item::before {
     height: 30vw;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .dates__images .dates__grid__layout .dates__grid__item::before {
+    height: 45vw;
   }
 }
 .dates__images .dates__grid__layout .dates--one {

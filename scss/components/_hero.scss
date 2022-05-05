@@ -173,7 +173,8 @@
           }
 
           @include responsive ('mobile-v') {
-            width: 17.5vw;
+            width: 32.5vw;
+            align-self: flex-end;
           }
           
           span{

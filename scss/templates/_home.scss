@@ -229,13 +229,21 @@
       @include responsive ('tablet-h') {
         height: 30vw;
       }
+
+      @include responsive ('mobile-v') {
+        height: 45vw;
+      }
       
       .image-background {
         min-width: 6.7vw;
         position: relative;
 
         @include responsive ('tablet-h') {
-          max-width: 13vw;
+          min-width: 13vw;
+        }
+
+        @include responsive ('mobile-v') {
+          min-width: 20vw;
         }
       }
 
@@ -251,6 +259,10 @@
           font-size: 2.3vw;
           margin-top: 10px;
         }
+
+        @include responsive ('mobile-v') {
+          font-size: 4.3vw;
+        }
       }
     }
     
@@ -261,6 +273,10 @@
 
       @include responsive ('tablet-h') {
         height: 30vw;
+      }
+
+      @include responsive ('mobile-v') {
+        height: 45vw;
       }
     }
 
