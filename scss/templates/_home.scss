@@ -11,7 +11,7 @@
   }
 
   @include responsive ('mobile-v') {
-    padding-top: 36vw;
+    padding-top: 42vw;
   }
 
   &--row {
@@ -90,6 +90,10 @@
       .icon__img {
         width: 4vw;
         margin-right: 10px;
+
+        @include responsive ('mobile-v') {
+          width: 9vw;
+        }
       }
     }
 
@@ -257,7 +261,7 @@
 
         @include responsive ('tablet-h') {
           font-size: 2.3vw;
-          margin-top: 10px;
+          margin-top: 10px; 
         }
 
         @include responsive ('mobile-v') {
@@ -321,6 +325,10 @@
 
       @include responsive ('tablet-h') {
         font-size: 3.5vw;
+      }
+
+      @include responsive ('mobile-v') {
+        font-size: 4.8vw;
       }
     }
   }
@@ -558,13 +566,26 @@
         }
 
         .post__image {
-          max-width: 5.2vw;
+          max-width: 21.2vw;
           margin-right: 20px;
+
+          @include responsive ('tablet-h') {
+            max-width: 8.2vw;
+          }
+
+          @include responsive ('mobile-v') {
+            max-width: 15vw;
+            margin-bottom: 1.5vw;
+          }
         }
         
         .post__text {
           display: flex;
           flex-direction: column;
+
+          @include responsive ('mobile-v') {
+            padding-left: 3vw;
+          }
           
           p {
             font-size: 16px;
@@ -606,6 +627,11 @@
 
       .social__post--row {
         flex-direction: row;
+
+        @include responsive ('mobile-v') {
+          flex-direction: column;
+          align-items: flex-start;
+        }
       }
     }
 

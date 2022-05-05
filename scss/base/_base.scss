@@ -50,8 +50,9 @@ p {
 }
 
 .menu-desk {
-
   display: flex;
+  justify-content: flex-end;
+  width: 100%;
 
   @include responsive ('tablet-h') {
     display: none;

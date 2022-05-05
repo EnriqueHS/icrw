@@ -7,7 +7,8 @@
     background: url(../files/hero.jpg) no-repeat center center / cover;
 
     @include responsive ('mobile-v') {
-      height: 65vw;
+      height: 80vw;
+      position: relative;
     }
     
     .hero__text { 
@@ -23,6 +24,7 @@
 
       @include responsive ('mobile-v') {
         padding: 0 30px;
+        height: 85vw;
       }
   
       .hero__title {
@@ -38,6 +40,9 @@
           br {
             display: none;
           }
+        }
+        @include responsive ('mobile-v') {
+          font-size: 26px;
         }
     
         &::before {
@@ -75,6 +80,7 @@
 
         @include responsive ('mobile-v') {
           font-size: 14px;
+          width: 81.5vw;
         }
       }
     }
@@ -82,6 +88,10 @@
     .join__container__position{
 
       position: relative;
+
+      @include responsive ('mobile-v') {
+        position: static;
+      }
 
       .join__container{
         width: 53vw;
@@ -105,7 +115,7 @@
 
         @include responsive ('mobile-v') {
           bottom: -30vw;
-          padding: 30px 50px;
+          padding: 30px 10px 30px 50px;
         }
   
         .join__left{
@@ -133,6 +143,10 @@
               }
             }
 
+            @include responsive ('mobile-v') {
+              font-size: 5vw;
+            }
+
             &::before {
               content: "";
               position: absolute;
@@ -143,6 +157,14 @@
               height: 31px;
               background-color:$third-color;
               border: 1px solid $dark-grey-check;
+
+              @include responsive ('mobile-v') {
+                width: 21px;
+                height: 21px;
+                left: -32px;
+                left: -7vw;
+                top: 1vw;
+              }
             }
           }
 
@@ -157,7 +179,7 @@
             }
 
             @include responsive ('mobile-v') {
-              font-size: 14px;
+              font-size: 12px;
             }
           }
         }
