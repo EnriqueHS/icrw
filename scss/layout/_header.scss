@@ -42,6 +42,10 @@ header {
 
     .menu__main {
       display: flex;
+
+      @include responsive ('tablet-h') {
+        flex-direction: column;
+      }
     }
 
     .menu.active {
@@ -55,8 +59,12 @@ header {
       align-items: flex-end;
       justify-content: flex-end;
 
-      @include responsive ('tablet-h') {
+      @include responsive ('tablet-h') { //menu responsive
         align-items: center;
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+        padding: 4vw 0;
       }
 
       &__link {
@@ -129,6 +137,10 @@ header {
     .donate{
       background-color: $dark-red;
       width: 14.3vw;
+
+      @include responsive ('tablet-h') {
+        width: 100%;
+      }
     }
 
     .firts{
@@ -180,6 +192,12 @@ header {
       justify-content:flex-start;
       align-items: center;
       padding-bottom: 13px;
+
+      @include responsive ('tablet-h') {
+        width: 100%;
+        justify-content: center;
+        padding: 4vw 0;
+      }
       
 
       img{

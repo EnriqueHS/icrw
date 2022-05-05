@@ -95,7 +95,7 @@
 
       .join__container{
         width: 53vw;
-        height: 18vw;
+        height: 14vw;
         background-color:$dark-red ;
         position: absolute;
         bottom: -3vw;
@@ -131,16 +131,18 @@
           }
   
           .join__title{
-            font-size: 30px;
+            font-size: 2.8vw;
             padding-bottom: 13px;
             position: relative;
 
-            @include responsive ('tablet-h') {
-              font-size: 26px;
-
+            @include responsive ('desktop') {
               br {
                 display: none;
               }
+            }
+
+            @include responsive ('tablet-h') {
+              font-size: 26px;
             }
 
             @include responsive ('mobile-v') {
