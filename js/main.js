@@ -1,8 +1,8 @@
 $(document).ready(function () {
 
-  $('.hamburger-menu').on('click', function() {
-    $('.bar').toggleClass('animate');
-
+  $('.site__menu').on('click', function() {
+    $(this).toggleClass('animate');
+    $('.menu-desk').slideToggle();
   }) 
   
 /* 

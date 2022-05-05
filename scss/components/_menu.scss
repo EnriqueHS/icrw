@@ -24,9 +24,7 @@
   background: $primary-color;
   transition: all 0ms 300ms;
 }
-.bar.animate {
-  background: rgba(255, 255, 255, 0);
-}
+
 
 .bar:before {
   content: "";
@@ -46,14 +44,25 @@
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.bar.animate:after {
+
+.site__menu {
+
+  &.animate {
+
+    .bar {
+      background: rgba(255, 255, 255, 0);
+    }
+    
+.bar:after {
   top: 0;
   transform: rotate(45deg);
   transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.bar.animate:before {
+.bar:before {
   bottom: 0;
   transform: rotate(-45deg);
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+  } 
 }
