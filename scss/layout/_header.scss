@@ -154,6 +154,10 @@ header {
           @include responsive ('tablet-h') {
             font-size: 3vw;
           }
+
+          @include responsive ('mobile-v') {
+            font-size: 5vw;
+          }
         }
 
         span a {
