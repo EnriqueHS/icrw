@@ -13,11 +13,15 @@ header {
     align-items: center;
     height:auto;
     cursor: pointer;
-    height: 5.5vw;
+    height: 6.8vw;
       position: relative;
 
       @include responsive ('tablet-h') {
-        height: auto;
+        height: 8.1vw;
+      }
+
+      @include responsive ('mobile-v') {
+        height: 13.1vw;
       }
     
       li {
@@ -25,18 +29,26 @@ header {
         font-size: 16px;
       }
 
-    .logo {
-      width: 29.3vw;
-      margin: 0 3vw 0 2.5vw;
-
-      @include responsive ('tablet-h') {
-        margin: 0 4vw 0 3.5vw;
-        width: 25.3vw;
-      }
-
-      @include responsive ('mobile-v') {
-        width: 47.3vw;
-        margin-top: -3vw;
+    .logo__cont {
+      z-index: 50;
+      
+      .logo {
+        width: 29.3vw;
+        margin: 0 3vw 0 2.5vw;
+  
+        img {
+          display: flex;
+        }
+  
+        @include responsive ('tablet-h') {
+          margin: 0 4vw 0 3.5vw;
+          width: 28.3vw;
+        }
+  
+        @include responsive ('mobile-v') {
+          width: 47.3vw;
+          margin-top: -3vw;
+        }
       }
     }
 
@@ -54,7 +66,7 @@ header {
 
     .menu__item{
       width: 15.1vw;//266px 20.1vw 29-04
-      height: 5.5vw;//83px
+      height: 6.8vw;//83px
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
@@ -64,7 +76,7 @@ header {
         justify-content: center;
         width: 100%;
         flex-direction: column;
-        padding: 4vw 0;
+        padding: 6vw 0;
       }
 
       &__link {
@@ -74,7 +86,7 @@ header {
         text-transform: uppercase;
 
         @include responsive ('tablet-h') {
-          padding: 0 15px 0px 0;
+          font-size: 20px;
         }
       }
 
@@ -93,6 +105,9 @@ header {
 
         @include responsive ('tablet-h') { 
           padding-top: 20px;
+          height: 100vh;
+          width: 100%;
+          top: 11.5vw;
         }
 
         .menu__sub_ul {
@@ -144,7 +159,11 @@ header {
     }
 
     .firts{
-      background-color:$light-green-bg; 
+      background-color:$light-green-bg;
+      
+      @include responsive ('tablet-h') {
+        background-color: rgba(110, 172, 172, 1) ;
+      }
 
 
       &:hover {
@@ -158,7 +177,11 @@ header {
     }
 
     .second{
-      background-color: $light-green-bg-second;
+      background-color: $light-green-bg-second; 
+
+      @include responsive ('tablet-h') {
+        background-color: rgba(110, 172, 172, 1) ;
+      }
 
       &:hover {
         background-color: $dark-buttom-hover;
@@ -173,6 +196,10 @@ header {
     .third{
       background-color: $light-green-bg-thrid;
 
+      @include responsive ('tablet-h') {
+        background-color: rgba(110, 172, 172, 1) ;
+      }
+
       &:hover {
         background-color: $dark-buttom-hover;
       }
@@ -185,7 +212,7 @@ header {
 
     .search{
       width: 4.7vw;//48px
-      height: 5.5vw;
+      height: 6.8vw;
       background-color:$darker-green-bg;
       display: flex;
       flex-direction: column-reverse;
@@ -196,7 +223,7 @@ header {
       @include responsive ('tablet-h') {
         width: 100%;
         justify-content: center;
-        padding: 4vw 0;
+        padding: 6vw 0;
       }
       
 

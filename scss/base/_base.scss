@@ -57,14 +57,18 @@ p {
   @include responsive ('tablet-h') {
     display: none;
     position: absolute;
-    top: 14vw;
+    top: 8vw;
     left: 0;
     width: 100%;
     height: 100vh;
     flex-direction: column;
-    background-color: grey;
-  
     z-index: 10;
+    background-color: $white;
+
+  }
+
+  @include responsive ('mobile-v') {
+    top: 13vw;
   }
 }
 
