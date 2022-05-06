@@ -126,6 +126,7 @@ footer {
 
 										@include responsive ('mobile-v') {
 											width: 80.8vw;
+											min-height: 20.5vw;
 										}
                 }
             }
@@ -222,7 +223,7 @@ footer {
 				@include responsive ('tablet-h') {
 					align-items: center;
 					flex-direction: column;
-					min-height: 30vw;
+					min-height: 22vw;
 				}
 
 				@include responsive ('mobile-v') {

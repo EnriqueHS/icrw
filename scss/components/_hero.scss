@@ -1,4 +1,8 @@
 .hero {
+  
+  @include responsive ('mobile-v') {
+    padding-top: 13vw;
+  }
 
   &__container {
     width: 100%;

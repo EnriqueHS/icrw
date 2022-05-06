@@ -146,6 +146,9 @@ header nav {
 @media only screen and (max-width: 600px) {
   header nav {
     height: 13.1vw;
+    position: fixed;
+    width: 100%;
+    background-color: #ffffff;
   }
 }
 header nav li {
@@ -504,7 +507,7 @@ footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__ti
 }
 @media only screen and (max-width: 600px) {
   footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__title {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__title--red {
@@ -532,6 +535,7 @@ footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__te
 @media only screen and (max-width: 600px) {
   footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__text {
     width: 80.8vw;
+    min-height: 20.5vw;
   }
 }
 footer .subfooter__grid__layout .subfooter__item .button {
@@ -661,7 +665,7 @@ footer .offices__container .offices__links {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 30vw;
+    min-height: 22vw;
   }
 }
 @media only screen and (max-width: 600px) {
@@ -788,6 +792,11 @@ footer .offices__container .social__media__container .social__media__item__foote
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), -webkit-transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
 }
 
+@media only screen and (max-width: 600px) {
+  .hero {
+    padding-top: 13vw;
+  }
+}
 .hero__container {
   width: 100%;
   background-size: 100%;
@@ -1210,7 +1219,7 @@ footer .offices__container .social__media__container .social__media__item__foote
 }
 @media only screen and (max-width: 600px) {
   .grid__layout .box__title {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .grid__layout .box__title--big {
@@ -1831,7 +1840,7 @@ footer .offices__container .social__media__container .social__media__item__foote
 }
 @media only screen and (max-width: 600px) {
   .latest__grid__layout .latest__item .latest__main .latest__title {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .latest__grid__layout .latest__item .latest__main .latest__title--red {
@@ -2318,7 +2327,7 @@ footer .offices__container .social__media__container .social__media__item__foote
 }
 @media only screen and (max-width: 600px) {
   .services .flex__layout .box__title {
-    font-size: 26px;
+    font-size: 24px;
   }
 }
 .services .flex__layout .box__title--big {
