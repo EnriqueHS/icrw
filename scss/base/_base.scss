@@ -64,11 +64,11 @@ p {
     flex-direction: column;
     z-index: 10;
     background-color: $white;
-
   }
 
   @include responsive ('mobile-v') {
     top: 13vw;
+    text-align: center;
   }
 }
 
