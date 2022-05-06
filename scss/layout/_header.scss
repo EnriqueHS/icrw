@@ -21,7 +21,7 @@ header {
       }
 
       @include responsive ('mobile-v') {
-        height: 13.1vw;
+        height: 15.1vw;
         position: fixed;
         width: 100%;
         background-color: $white;
