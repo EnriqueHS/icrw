@@ -108,7 +108,8 @@ header {
 
         @include responsive ('tablet-h') { 
           padding: 20px 3vw 20px 3vw;
-          height: 100vh;
+          //height: 100vh;
+          height: auto;
           width: 100%;
           top: 11.5vw;
         }
