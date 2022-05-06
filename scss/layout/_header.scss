@@ -143,6 +143,10 @@ header {
           display: block;
           padding: 10px 0;
           border-top: 1px solid rgba(255, 255, 255, 0.4);
+
+          @include responsive ('mobile-v') {
+            padding: 5px 0;
+          }
         } 
 
         span {
@@ -158,6 +162,7 @@ header {
 
           @include responsive ('mobile-v') {
             font-size: 5vw;
+            margin-bottom: 5px;
           }
         }
 

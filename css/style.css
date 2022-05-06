@@ -285,6 +285,11 @@ header nav .menu__item .menu__sub li {
   padding: 10px 0;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
+@media only screen and (max-width: 600px) {
+  header nav .menu__item .menu__sub li {
+    padding: 5px 0;
+  }
+}
 header nav .menu__item .menu__sub span {
   font-size: 1.9vw;
   line-height: 1.2;
@@ -300,6 +305,7 @@ header nav .menu__item .menu__sub span {
 @media only screen and (max-width: 600px) {
   header nav .menu__item .menu__sub span {
     font-size: 5vw;
+    margin-bottom: 5px;
   }
 }
 header nav .menu__item .menu__sub span a {
