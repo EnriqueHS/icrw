@@ -6,29 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="Icon" href="files/favicon.png">
 	<link rel="stylesheet" href="css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-migrate-3.0.0.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
   <title>Services</title>
 </head>
 <body>
   <header>
 		<nav>
-			<div class="logo__cont">
+			<div class="logo__cont"> 
 				<div class="logo">
-				<a href=".">
-          <img src="files/logo.jpg" alt="icrw">
-        </a>
+					<a href=".">
+						<img src="files/logo.jpg" alt="icrw">
+					</a>
 				</div>
 			</div>
 			<!-- menu nav -->
-			<div class="container"> 
+		
+			<!-- hamburger-menu -->
+			<div class="menu-responsive">
+				<button class="site__menu">
+					<div class="hamburger-menu">
+						<div class="bar"></div>
+					</div>
+				</button>
+			</div>
+			
+			<!-- hamburger-menu end -->
+
+
+			<div class="container menu-desk">  
+				
+				
 				<ul class="menu__main"> 
-					
-					
 					
 					<li class="menu__item firts"><a class="menu__item__link" href="">Work + Impact</a>
 					
 						<div class="menu__sub">
 							<div class="menu__sub_ul">
-								<span>Services</span>
+								<span><a href="services.html">Services</a></span>
 								<ul>
 									<li><a href="">Research & Analysis</a></li>
 									<li><a href="">Policy & Advocacy</a></li>
@@ -73,7 +89,7 @@
 						
 						<div class="menu__sub">
 							<div class="menu__sub_ul">
-								<span>Publications</span>
+								<span><a href=""> Publications</a></span>
 								<ul>
 									<li><a href="">Research & Analysis</a></li>
 									<li><a href="">Policy & Advocacy</a></li>
@@ -172,14 +188,18 @@
 						</div>
 
 					</li>
-				</ul> 
-			</div>
 
-			<!-- menu nav -->
+				</ul> 
+
 				<div class="search">
 					<img src="files/loupe.svg" alt="Search">
 				</div>
 				<div class="menu__item donate"><a class="menu__item__link" href="">DONATE</a></div>
+
+			</div>
+
+			<!-- menu nav -->
+			
 		</nav>
 	</header>
 	<!-- header end -->
