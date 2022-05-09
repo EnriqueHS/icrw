@@ -123,6 +123,10 @@ header {
             width: 48%;
             margin-bottom: 5vw;
           }
+
+          @include responsive ('mobile-v') {
+            width: 90%;
+          }
         }
 
         .menu__sub_ul:nth-of-type(2) {

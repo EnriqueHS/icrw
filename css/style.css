@@ -269,6 +269,11 @@ header nav .menu__item .menu__sub .menu__sub_ul {
     margin-bottom: 5vw;
   }
 }
+@media only screen and (max-width: 600px) {
+  header nav .menu__item .menu__sub .menu__sub_ul {
+    width: 90%;
+  }
+}
 header nav .menu__item .menu__sub .menu__sub_ul:nth-of-type(2) {
   margin-right: 0;
 }
@@ -557,7 +562,7 @@ footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__te
 @media only screen and (max-width: 1050px) {
   footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__text {
     min-height: 11.5vw;
-    font-size: 12px;
+    font-size: 16px;
     width: 60.8vw;
   }
 }
@@ -565,6 +570,7 @@ footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__te
   footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__text {
     width: 80.8vw;
     min-height: 20.5vw;
+    font-size: 12px;
   }
 }
 footer .subfooter__grid__layout .subfooter__item .button {
@@ -672,9 +678,26 @@ footer .links__footer .menu__footer__container .menu__footer__nav .footer__list_
 }
 footer .offices__container {
   padding: 42px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media only screen and (max-width: 1050px) {
+  footer .offices__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 footer .offices__container .offices__links {
-  width: 100%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,12 +717,13 @@ footer .offices__container .offices__links {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    min-height: 22vw;
+    height: 22vw;
   }
 }
 @media only screen and (max-width: 600px) {
   footer .offices__container .offices__links {
-    height: 40vw;
+    height: 25vw;
+    width: 100%;
   }
 }
 footer .offices__container .offices__links a {
@@ -728,6 +752,14 @@ footer .offices__container .social__media__container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media only screen and (max-width: 1050px) {
+  footer .offices__container .social__media__container {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5vw;
+  }
 }
 footer .offices__container .social__media__container .social__media__item__footer {
   margin-right: 21px;
@@ -2203,12 +2235,12 @@ footer .offices__container .social__media__container .social__media__item__foote
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 50px;
+  font-size: 6.8vw;
   line-height: 1.3;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 22px;
-  height: 267px;
+  height: 36.6vw;
   background-color: #757575;
   position: relative;
   font-weight: 700;
@@ -2248,6 +2280,11 @@ footer .offices__container .social__media__container .social__media__item__foote
 .services .solutions__item__container {
   margin-bottom: 20px;
   padding-left: 23px;
+}
+@media only screen and (max-width: 1050px) {
+  .services .solutions__item__container {
+    margin-bottom: 6vw;
+  }
 }
 .services .solutions__item__container .solutions__item__title {
   font-size: 20px;
@@ -2289,9 +2326,25 @@ footer .offices__container .social__media__container .social__media__item__foote
   width: 100%;
   padding-top: 6.5vw;
 }
+@media only screen and (max-width: 1050px) {
+  .services .flex__layout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .services .flex__layout .image__cont__services {
   max-width: 43.8vw;
   margin-right: 2.5vw;
+}
+@media only screen and (max-width: 1050px) {
+  .services .flex__layout .image__cont__services {
+    width: 100%;
+    max-width: 100%;
+    height: 35vw;
+    margin-right: 0;
+  }
 }
 .services .flex__layout--reverse {
   -webkit-box-align: center;
@@ -2302,10 +2355,26 @@ footer .offices__container .social__media__container .social__media__item__foote
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
+@media only screen and (max-width: 1050px) {
+  .services .flex__layout--reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
 .services .flex__layout--reverse .image__cont__services {
   max-width: 43.8vw;
   margin-left: 2.5vw;
   margin-right: 0;
+}
+@media only screen and (max-width: 1050px) {
+  .services .flex__layout--reverse .image__cont__services {
+    width: 100%;
+    max-width: 100%;
+    height: 35vw;
+    margin-right: 0;
+  }
 }
 .services .flex__layout .box {
   display: -webkit-box;
@@ -2318,7 +2387,13 @@ footer .offices__container .social__media__container .social__media__item__foote
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  width: 26.8vw;
+  width: 33.8vw;
+}
+@media only screen and (max-width: 1050px) {
+  .services .flex__layout .box {
+    width: 100%;
+    margin-top: 2vw;
+  }
 }
 .services .flex__layout .box--reverse {
   -webkit-box-align: end;

@@ -120,13 +120,14 @@ footer {
 
 										@include responsive ('tablet-h') {
 											min-height: 11.5vw;
-											font-size: 12px;
+											font-size: 16px;
 											width: 60.8vw;
 										}
 
 										@include responsive ('mobile-v') {
 											width: 80.8vw;
 											min-height: 20.5vw;
+											font-size: 12px;
 										}
                 }
             }
@@ -213,9 +214,16 @@ footer {
 		//offices
 		.offices__container {
 			padding: 42px 0;
+			display: flex;
+    	justify-content: space-between;
+
+			@include responsive ('tablet-h') {
+				flex-direction: column;
+				align-items: center;
+			}
 	
 			.offices__links {
-				width: 100%;
+				width: 70%;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
@@ -223,11 +231,12 @@ footer {
 				@include responsive ('tablet-h') {
 					align-items: center;
 					flex-direction: column;
-					min-height: 22vw;
+					height: 22vw;
 				}
 
 				@include responsive ('mobile-v') {
-					height: 40vw;
+					height: 25vw;
+					width: 100%;
 				}
 
 				a {
@@ -256,6 +265,11 @@ footer {
 				display: flex;
 				height: auto;
 				align-items: center;
+
+				@include responsive ('tablet-h') {
+					align-items: center;
+					margin-top: 5vw;
+				}
 
 				.social__media__item__footer {
 					margin-right: 21px;
