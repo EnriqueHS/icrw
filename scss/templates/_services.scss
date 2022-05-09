@@ -76,6 +76,10 @@
       height: 9px;
       transform: rotate(-315deg);
       background-color: $dark-red ;
+
+      @include responsive ('tablet-h') {
+        left: -2.5vw;
+      }
     }
 
     p {
@@ -84,6 +88,9 @@
       font-weight: 400;
       font-family: $georgia;
       
+      @include responsive ('mobile-v') {
+        font-size: 16px;
+      }
     }
   }
 

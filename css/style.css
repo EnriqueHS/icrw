@@ -2307,11 +2307,21 @@ footer .offices__container .social__media__container .social__media__item__foote
           transform: rotate(-315deg);
   background-color: #e33f2c;
 }
+@media only screen and (max-width: 1050px) {
+  .services .solutions__item__container .solutions__item__title::before {
+    left: -2.5vw;
+  }
+}
 .services .solutions__item__container p {
   font-size: 18px;
   color: #828282;
   font-weight: 400;
   font-family: "Georgia", "Times New Roman", "Times, serif";
+}
+@media only screen and (max-width: 600px) {
+  .services .solutions__item__container p {
+    font-size: 16px;
+  }
 }
 .services .flex__layout {
   display: -webkit-box;
