@@ -1204,6 +1204,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   -ms-grid-row-span: 2;
   grid-row: 1/3;
   margin-top: -2vw;
+  border: 1px solid red;
 }
 @media only screen and (max-width: 1050px) {
   .grid__layout .box--work {
