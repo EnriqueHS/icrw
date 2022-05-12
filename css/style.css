@@ -212,9 +212,9 @@ header nav .menu__item {
 }
 @media only screen and (max-width: 1050px) {
   header nav .menu__item {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -224,6 +224,7 @@ header nav .menu__item {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 6vw 0;
+    padding-left: 20px;
   }
 }
 header nav .menu__item__link {
@@ -343,6 +344,7 @@ header nav .firts:hover {
 header nav .firts:hover .menu__sub {
   background-color: #008987;
   display: block;
+  height: 100vh;
 }
 header nav .second {
   background-color: rgba(110, 172, 172, 0.85);
@@ -402,6 +404,10 @@ header nav .search {
         -ms-flex-pack: center;
             justify-content: center;
     padding: 6vw 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 20px;
   }
 }
 header nav .search img {
