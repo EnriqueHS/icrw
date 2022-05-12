@@ -162,11 +162,11 @@ header {
           font-weight: 700;
 
           @include responsive ('tablet-h') {
-            font-size: 3vw;
+            font-size: 2.1vw;
           }
 
           @include responsive ('mobile-v') {
-            font-size: 5vw;
+            font-size: 3.5vw;
             margin-bottom: 5px;
           }
         }

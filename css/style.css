@@ -305,12 +305,12 @@ header nav .menu__item .menu__sub span {
 }
 @media only screen and (max-width: 1050px) {
   header nav .menu__item .menu__sub span {
-    font-size: 3vw;
+    font-size: 2.1vw;
   }
 }
 @media only screen and (max-width: 600px) {
   header nav .menu__item .menu__sub span {
-    font-size: 5vw;
+    font-size: 3.5vw;
     margin-bottom: 5px;
   }
 }
