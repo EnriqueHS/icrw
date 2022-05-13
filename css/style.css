@@ -560,10 +560,10 @@ footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__ti
 }
 footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__text {
   font-family: "Georgia", "Times New Roman", "Times, serif";
-  font-size: 16px;
+  font-size: 1vw;
   color: #ffffff;
   line-height: 1.6;
-  min-height: 14.5vw;
+  min-height: 8.5vw;
 }
 @media only screen and (max-width: 1050px) {
   footer .subfooter__grid__layout .subfooter__item .subfooter__main .subfooter__text {
@@ -2237,7 +2237,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   background-color: #008987;
 }
 
-.services .solutions__title {
+.services .hero__small {
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -2247,25 +2247,39 @@ footer .offices__container .social__media__container .social__media__item__foote
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 6.8vw;
+  height: 17vw;
+  background-color: #CECECE;
+}
+.services .hero__small .solutions__title {
+  font-size: 3.2vw;
   line-height: 1.3;
   text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 22px;
-  height: 36.6vw;
-  background-color: #757575;
   position: relative;
   font-weight: 700;
 }
-.services .solutions__title::before {
+.services .hero__small .solutions__title::before {
   content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 50%;
-  top: 4.5vw;
+  top: -1.5vw;
   width: 22px;
   height: 22px;
+  -webkit-transform: rotate(-315deg);
+          transform: rotate(-315deg);
+  border: 1px solid #ffffff;
+}
+.services .hero__small .rectangle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  top: 6vw;
+  width: 10px;
+  height: 10px;
   -webkit-transform: rotate(-315deg);
           transform: rotate(-315deg);
   border: 1px solid #ffffff;
@@ -2277,7 +2291,7 @@ footer .offices__container .social__media__container .social__media__item__foote
   font-size: 16px;
   text-transform: uppercase;
   color: #0a5b66;
-  margin-bottom: 22px;
+  margin: 22px 0;
   text-align: center;
 }
 .services .solutions__text__container p {
@@ -2522,5 +2536,54 @@ footer .offices__container .social__media__container .social__media__item__foote
   font-size: 25px;
   font-family: "Georgia", "Times New Roman", "Times, serif";
   color: #00908e;
+}
+
+.publications .hero__small {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 17vw;
+  background-color: #e33f2c;
+  position: relative;
+}
+.publications .hero__small .publications__title {
+  font-size: 3.2vw;
+  line-height: 1.3;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 22px;
+  position: relative;
+  font-weight: 700;
+}
+.publications .hero__small .publications__title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  top: -1.5vw;
+  width: 22px;
+  height: 22px;
+  -webkit-transform: rotate(-315deg);
+          transform: rotate(-315deg);
+  border: 1px solid #ffffff;
+}
+.publications .hero__small .rectangle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  top: 11vw;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(-315deg);
+          transform: rotate(-315deg);
+  border: 1px solid #ffffff;
 }
 /*# sourceMappingURL=style.css.map */

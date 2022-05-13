@@ -113,10 +113,10 @@ footer {
 
                 .subfooter__text {
 										font-family: $georgia;
-                    font-size: 16px;
+                    font-size: 1vw;
                     color: $white;
 										line-height: 1.6;
-										min-height: 14.5vw;
+										min-height: 8.5vw;
 
 										@include responsive ('tablet-h') {
 											min-height: 11.5vw;
