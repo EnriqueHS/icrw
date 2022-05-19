@@ -2586,4 +2586,44 @@ footer .offices__container .social__media__container .social__media__item__foote
           transform: rotate(-315deg);
   border: 1px solid #ffffff;
 }
+.publications .grid__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% auto;
+  grid-template-columns: 20% auto;
+}
+.publications .grid__container .publications__filter {
+  border: 1px solid;
+}
+.publications .grid__container .publications__filter .publications__visual__icon {
+  width: 10vw;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+.publications .grid__container .publications__filter .publications__visual__icon img {
+  margin-right: 20px;
+  max-width: 35px;
+}
+.publications .grid__container .publications__filter .publications__filter__cont .publications__title {
+  font-size: 16px;
+  color: #0a5b66;
+  padding-top: 25px;
+  padding-bottom: 10px;
+}
+.publications .grid__container .publications__filter .publications__filter__cont .publications__filter__item label {
+  color: #828282;
+  font-size: 16px;
+}
+.publications .grid__container .publications__filter .publications__filter__cont .publications__filter__item label input {
+  margin-right: 5px;
+}
+.publications .grid__container .publications__cont {
+  background-color: antiquewhite;
+}
 /*# sourceMappingURL=style.css.map */

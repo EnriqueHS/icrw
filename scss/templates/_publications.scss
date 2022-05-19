@@ -43,4 +43,52 @@
       
     }
   }
+
+  .grid__container {
+    display: grid;
+    grid-template-columns: 20% auto;
+
+    .publications__filter {
+      border: 1px solid;
+
+      .publications__visual__icon {
+        width: 10vw;
+        border: 1px solid red;
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        img {
+          margin-right: 20px;
+          max-width: 35px;
+        }
+      }
+
+      .publications__filter__cont {
+
+        .publications__title {
+          font-size: 16px;
+          color:$secondary-color ;
+          padding-top: 25px;
+          padding-bottom: 10px;
+        }
+
+        .publications__filter__item {
+
+          label {
+            color: $primary-color;
+            font-size: 16px;
+            
+            input {
+              margin-right: 5px;
+            }
+          }
+        }
+      }
+    }
+
+    .publications__cont {
+      background-color: antiquewhite;
+    }
+  }
 }  
